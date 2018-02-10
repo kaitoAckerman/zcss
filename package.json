@@ -1,0 +1,26 @@
+{
+	"name": "zcss",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kaitoAckerman/zcss.git"
+	},
+	"author": "kaitoAckerman",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kaitoAckerman/zcss/issues"
+	},
+	"homepage": "https://github.com/kaitoAckerman/zcss#readme",
+	"devDependencies": {
+		"gulp": "latest",
+		"gulp-concat": "latest",
+		"gulp-sass": "latest",
+		"gulp-uglify": "latest",
+		"gulp-util": "latest"
+	}
+}
