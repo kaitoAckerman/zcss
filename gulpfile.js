@@ -9,7 +9,7 @@ var jsSrc = ['src/scripts/*.js'],
 	dist = 'dist';
 
 gulp.task('sass', function () {
-	gulp.src(sassSrc)
+	gulp.src('src/sass/zcss.scss')
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}))
