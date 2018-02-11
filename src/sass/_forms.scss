@@ -1,0 +1,28 @@
+fieldset {
+	border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+select,
+textarea {
+	height: $len-largest;
+    border: none;
+    border-bottom: 2px solid $color-light;
+    padding: $len-base;
+	outline: none;
+	color: $color-darker;
+	font-family: $font;
+	width: 100%;
+	font-size: $font-base;
+	box-sizing: border-box;
+}
+
+label{
+	padding: $len-base;
+}
