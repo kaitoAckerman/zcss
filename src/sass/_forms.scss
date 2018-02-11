@@ -12,21 +12,21 @@ input[type="password"],
 select,
 textarea {
 	height: $len-largest;
-    border: none;
-    border-bottom: 1px solid $color-dark;
-    padding: $len-base;
+	border: none;
+	border-bottom: 1px solid $color-dark;
+	padding: $len-base;
 	outline: none;
 	color: $color-darker;
 	font-family: $font;
 	width: 100%;
 	font-size: $font-base;
 	box-sizing: border-box;
-
-	&:active, &:focus{
+	&:active,
+	&:focus {
 		border-bottom: 2px solid $color-darker;
 	}
 }
 
-label{
+label {
 	padding: $len-base;
 }
