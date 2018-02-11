@@ -1,12 +1,24 @@
-.btn{
-	padding: $len-base;
+button{
+	background-color: $color-light;
+	border: none;
+	font-family: $font;
+}
+button, .btn{
+	padding: $len-base $len-largest;
 	border-radius: $len-small;
 	box-shadow: $shadow-m;
 	color: $color-base;
+	border: 1px solid $color-light;
+	cursor: pointer;
 	&-primary{
 		background-color: $color-darker;
 	}
 	&-default{
 		background-color: $color-light;
+	}
+
+	&:hover{
+		box-shadow: none;
+		transition: $shadow-trans;
 	}
 }
