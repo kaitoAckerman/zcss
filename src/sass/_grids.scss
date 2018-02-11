@@ -1,7 +1,54 @@
-.container{
+.container {
 	position: relative;
 	padding: 0 $len-base;
 	width: 100%;
 	max-width: 70rem;
 	margin: 0 auto;
+}
+.col {
+	float: left;
+	width: 100%;
+	border: 1px solid red;
+	box-sizing: border-box;
+	margin-left: 4%;
+	&:first-child{
+		margin-left: 0;
+	}
+	&.one {
+		width: 4.66666666667%;
+	}
+	&.two {
+		width: 13.3333333333%;
+	}
+	&.three {
+		width: 22%;
+	}
+	&.four {
+		width: 30.6666666667%;
+	}
+	&.five {
+		width: 39.3333333333%;
+	}
+	&.six {
+		width: 48%;
+	}
+	&.seven {
+		width: 56.6666666667%;
+	}
+	&.eight {
+		width: 65.3333333333%;
+	}
+	&.nine {
+		width: 74.0%;
+	}
+	&.ten {
+		width: 82.6666666667%;
+	}
+	&.eleven {
+		width: 91.3333333333%;
+	}
+	&.twelve {
+		width: 100%;
+		margin-left: 0;
+	}
 }
