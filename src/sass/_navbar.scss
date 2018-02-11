@@ -1,0 +1,14 @@
+nav {
+	height: 4rem;
+	line-height: 4rem;
+	.brand {
+		font-size: $font-large;
+		display: inline-block;
+	}
+	.menus {
+		float: right;
+		ul>li {
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.btn{
+	padding: $len-base;
+	border-radius: $len-small;
+	box-shadow: $shadow-m;
+	color: $color-base;
+	&-primary{
+		background-color: $color-darker;
+	}
+	&-default{
+		background-color: $color-light;
+	}
+}
