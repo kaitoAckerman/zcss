@@ -6,6 +6,12 @@
 	margin: 0 auto;
 }
 
+.row:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
 @media (min-width: 550px) {
 	.col {
 		float: left;
