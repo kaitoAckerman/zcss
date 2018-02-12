@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat');
 
-var jsSrc = ['src/scripts/*.js'],
+var jsSrc = ['node_modules/jquery/dist/jquery.js', 'src/scripts/*.js'],
 	sassSrc = ['src/sass/*.scss'],
 	dist = 'dist';
 
