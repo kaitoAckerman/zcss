@@ -78,9 +78,27 @@
 					</div>
 				</fieldset>
 			</div>
+			<div class="section">
+				<h1>Popup</h1>
+				<hr>
+				<button data-modal="test">Test</button>
+			</div>
 		</div>
 	</div>
-	<script src="dist/app.js" />
+	<div class="modal" data-content="test">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Title</h3>
+			</div>
+			<div class="modal-body">
+				this will be popup box
+			</div>
+			<div class="modal-footer">
+				<button data-close="test">Close</button>
+			</div>
+		</div>
+	</div>
+	<script src="dist/app.js"></script>
 </body>
 
 </html>

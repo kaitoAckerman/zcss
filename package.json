@@ -21,6 +21,7 @@
 		"gulp-concat": "latest",
 		"gulp-sass": "latest",
 		"gulp-uglify": "latest",
-		"gulp-util": "latest"
+		"gulp-util": "latest",
+		"jquery": "^3.3.1"
 	}
 }
