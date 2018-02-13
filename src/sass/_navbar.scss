@@ -9,6 +9,20 @@ nav {
 		float: right;
 		ul>li {
 			display: inline-block;
+			a {
+				padding: $len-base $len-larger;
+				margin: 0 $len-large;
+			}
+			a:hover,
+			a:active,
+			.active {
+				background-color: $color-darker;
+				color: $color-base;
+				border-radius: 3px;
+				box-shadow: $shadow-m;
+				transition: 0.5s ease-out;
+				-webkit-transition: 0.5s ease-out;
+			}
 		}
 	}
 }

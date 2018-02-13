@@ -16,8 +16,8 @@
 	.col {
 		float: left;
 		width: 100%;
-		border: 1px solid red;
 		box-sizing: border-box;
+		margin-top: $len-base;
 		margin-left: 4%;
 		&:first-child {
 			margin-left: 0;
