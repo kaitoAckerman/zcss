@@ -11,20 +11,29 @@ input[type="url"],
 input[type="password"],
 select,
 textarea {
-	height: $len-largest;
 	border: none;
 	border-bottom: 1px solid $color-dark;
 	padding: $len-base;
 	outline: none;
+	margin-bottom: $len-larger;
 	color: $color-darker;
 	font-family: $font;
 	width: 100%;
 	font-size: $font-base;
 	box-sizing: border-box;
+	background-color: $color-w;
 	&:active,
 	&:focus {
 		border-bottom: 2px solid $color-darker;
 	}
+	option{
+		box-shadow: $shadow;
+	}
+}
+
+textarea{
+	height: 6.5rem;
+	color: $color-darker;
 }
 
 label {
