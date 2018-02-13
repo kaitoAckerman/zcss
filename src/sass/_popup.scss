@@ -13,7 +13,6 @@
 		position: relative;
 		background-color: $color-base;
 		margin: auto;
-		padding: $len-base;
 		width: 30%;
 		-webkit-animation-name: animatetop;
 		-webkit-animation-duration: 0.4s;
@@ -25,5 +24,8 @@
 		padding: $len-larger;
 	}
 	&-header,
-	&-footer {}
+	&-footer {
+		background-color: $color-w;
+		padding: $len-base
+	}
 }
