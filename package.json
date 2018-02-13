@@ -1,6 +1,6 @@
 {
 	"name": "zcss",
-	"version": "0.5",
+	"version": "0.0.5",
 	"description": "zcss boilerplate",
 	"main": "index.js",
 	"scripts": {
