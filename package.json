@@ -19,6 +19,7 @@
 	"devDependencies": {
 		"gulp": "^3.9.1",
 		"gulp-concat": "latest",
+		"gulp-connect": "^5.5.0",
 		"gulp-sass": "latest",
 		"gulp-uglify": "latest",
 		"gulp-util": "latest",
