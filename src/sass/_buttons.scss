@@ -8,13 +8,18 @@ button, .btn{
 	border-radius: $len-small;
 	box-shadow: $shadow-m;
 	color: $color-base;
-	border: 1px solid $color-light;
+	border: 1px solid transparent;
 	cursor: pointer;
 	&-primary{
 		background-color: $color-darker;
 	}
 	&-default{
-		background-color: $color-light;
+		color: $color-light;
+		box-shadow: none;
+		&:hover{
+			border: 1px solid $color-light;
+			background: rgba(244,164,96,0.4)
+		}
 	}
 
 	&:hover{
