@@ -1,25 +1,25 @@
 zcss
 ---
-CSS boilerplate inspired from [skeleton](http://getskeleton.com/) and [milligram](https://milligram.io/) css framework.
 
-> This framework is already include jQuery code
-## Contributor
-### Getting started
+> CSS boilerplate is inspired from [skeleton](http://getskeleton.com/) and [milligram](https://milligram.io/) css framework.
 
-Clone this project into your local folder using SSH (much easier) or HTTPS and install all dependencies needed (example below)
+This project use [sass](https://sass-lang.com/guide),[jquery](https://www.w3schools.com/jquery/default.asp) and [gulp](https://gulpjs.com/).
+## Contributing
+---
+- [Open an Issue](#open-an-issu)
+- [Building](#building)
+- [Submit a Pull Request](#submit-a-pull-request)
 
-```
-git clone git@github.com:kaitoAckerman/zcss.git && cd zcss && npm install && gulp
-```
+### Open an Issue
+---
+Open an Issue to report any problems or improvements. Provide screenshot to show the problem.
 
-#### Understanding workflow
+### Building
+---
+Install all dependencies by run `npm install` in you terminal. Once it done, run `gulp` in the root project directory. This will compile and minimize all files inside `src` directory into `dist` directory.
 
-This project using grunt to compile all source code into its destination folder `dist`.
+Makes change only in `src` directory and run `gulp` in terminal to compile all the files. Check out `index.html` to view your changes.
 
-To working with this project, only edit inside `src` folder. Either `sass` folder for CSS or `script` folder for javascript (jQuery).
-
-View `index.html` file for debugging your frontend code.
-
-#### Understanding grunt (gulpfile.js)
-
-Npm install will install all dependencies for example `gulp-connect`, `gulp-sass` and all plugin from `Grunt` to make all code automate and compile it into minify version into `dist` folder.
+### Submit a Pull Request
+---
+Fork this project and clone into you computer, makes some change. Once you satisfied with the changes, merge your changes by submitting a Pull Request!
