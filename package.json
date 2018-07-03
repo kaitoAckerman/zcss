@@ -4,7 +4,16 @@
 	"description": "zcss boilerplate",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "concurrently -k \"npm run dev\" \"npm run build\"",
+		"dev": "lite-server",
+		"build:js": "npm run concat:js && npm run watch:js",
+		"build:css": "npm run watch:css",
+		"build": "npm run build:js && npm run build:css",
+		"concat:js": "concat -o dist/app.js node_modules/jquery/dist/jquery.js src/scripts/app.js",
+		"watch:css": "onchange 'src/sass/*.scss' -- npm run sass",
+		"watch:js": "onchange 'src/scripts/*.js' -- npm run js",
+		"sass": "node-sass src/sass/zcss.scss --output-style compressed > dist/app.min.css",
+		"js": "uglifyjs src/scripts/*.js -m -o dist/app.js"
 	},
 	"repository": {
 		"type": "git",
@@ -17,12 +26,13 @@
 	},
 	"homepage": "https://github.com/kaitoAckerman/zcss#readme",
 	"devDependencies": {
-		"gulp": "^3.9.1",
-		"gulp-concat": "latest",
-		"gulp-connect": "^5.5.0",
-		"gulp-sass": "latest",
-		"gulp-uglify": "latest",
-		"gulp-util": "latest",
-		"jquery": "^3.3.1"
+		"concat": "^1.0.3",
+		"concurrently": "^3.6.0",
+		"jquery": "^3.3.1",
+		"jshint": "^2.9.5",
+		"lite-server": "^2.4.0",
+		"node-sass": "^4.9.0",
+		"onchange": "^4.0.0",
+		"uglify-js": "^3.4.3"
 	}
 }
