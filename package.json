@@ -1,38 +1,32 @@
 {
-	"name": "z4css",
-	"version": "0.0.5",
-	"description": "zcss boilerplate",
-	"main": "index.js",
-	"scripts": {
-		"start": "concurrently -k \"npm run dev\" \"npm run build\"",
-		"dev": "lite-server",
-		"build:js": "npm run concat:js && npm run watch:js",
-		"build:css": "npm run watch:css",
-		"build": "npm run build:js && npm run build:css",
-		"concat:js": "concat -o dist/app.js node_modules/jquery/dist/jquery.js src/scripts/app.js",
-		"watch:css": "onchange 'src/sass/*.scss' -- npm run sass",
-		"watch:js": "onchange 'src/scripts/*.js' -- npm run js",
-		"sass": "node-sass src/sass/zcss.scss --output-style compressed > dist/app.min.css",
-		"js": "uglifyjs src/scripts/*.js -m -o dist/app.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kaitoAckerman/zcss.git"
-	},
-	"author": "kaitoAckerman",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/kaitoAckerman/zcss/issues"
-	},
-	"homepage": "https://github.com/kaitoAckerman/zcss#readme",
-	"devDependencies": {
-		"concat": "^1.0.3",
-		"concurrently": "^3.6.0",
-		"jquery": "^3.3.1",
-		"jshint": "^2.9.5",
-		"lite-server": "^2.4.0",
-		"node-sass": "^4.9.0",
-		"onchange": "^4.0.0",
-		"uglify-js": "^3.4.3"
-	}
+  "name": "z4css",
+  "version": "0.0.5",
+  "description": "zcss boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev && npm run watch",
+    "dev": "lite-server",
+    "watch": "npm run watch:css && npm run watch:js",
+    "watch:css": "onchange 'src/scss/**' -- npm run build:css",
+    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
+    "build:css": "node-sass --output-style compressed -o dist src/scss",
+    "build:js": "uglifyjs node_modules/jquery/dist/jquery.js src/js/*.js -m -c -o dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaitoAckerman/zcss.git"
+  },
+  "author": "kaitoAckerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaitoAckerman/zcss/issues"
+  },
+  "homepage": "https://github.com/kaitoAckerman/zcss#readme",
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.9.0",
+    "onchange": "^4.0.0",
+    "uglify-js": "^3.4.3"
+  }
 }
