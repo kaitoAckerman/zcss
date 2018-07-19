@@ -11,9 +11,12 @@ $c3:#F8F3E9;
 $c4:#978A72;
 $c5:#395895;
 $c6:#C8AC8F;
+$c7:#34887C;
+$c8:#ffffff;
+$c9:#4ABDAC;
 
 // Core colors
-$primary-color: $c2 !default;
+$primary-color: $c7 !default;
 $primary-color-dark: darken($primary-color, 3%) !default;
 $primary-color-light: lighten($primary-color, 3%) !default;
 $secondary-color: lighten($primary-color, 37.5%) !default;
@@ -22,7 +25,7 @@ $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
 $dark-color: rgb(29, 29, 29) !default;
-$light-color: $c3 !default;
+$light-color: $c8 !default;
 $gray-color: lighten($dark-color, 40%) !default;
 $gray-color-dark: darken($gray-color, 25%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
