@@ -5,16 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="app.css">
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
 	<title>ZCSS</title>
 </head>
-<style>
-	body {
-		font-family: 'Barlow Semi Condensed', sans-serif;
-	}
-</style>
-<body style="background: #4ABDAC">
-	<div class="menu mx-2 my-1" style="background: #34887C">
+<body>
+	<div class="menu mx-2 my-1">
 		<div class="menu-item ml-2">
 			<header class="navbar" style="color: #fff">
 				<section class="navbar-section">
@@ -38,41 +32,45 @@
 			<p>Navbar example</p>
 		</div>
 		<div class="card">
-			<div class="mx-2 my-2">
-				<header class="navbar ml-2">
-					<section class="navbar-section">
-						<a href="#" class="navbar-brand mr-2">ZCSS</a>
-					</section>
-					<section class="navbar-center">
-						<!-- centered logo or brand -->
-					</section>
-					<section class="navbar-section">
-						<div class="input-group input-inline">
-							<a href="#" class="btn btn-link">Home</a>
-							<a href="#" class="btn btn-link">Component</a>
-							<a href="#" class="btn btn-link">Layout</a>
-						</div>
-					</section>
-				</header>
+			<div class="card-header">
+				<div class="menu">
+					<div class="menu-item ml-2">
+						<header class="navbar" style="color: #fff">
+							<section class="navbar-section">
+								<a href="#" class="navbar-brand mr-2">ZCSS</a>
+							</section>
+							<section class="navbar-center">
+								<!-- centered logo or brand -->
+							</section>
+							<section class="navbar-section">
+								<a href="#" class="navbar-brand mx-2">Home</a>
+								<a href="#" class="navbar-brand mx-2">Component</a>
+								<a href="#" class="navbar-brand mx-2">Layout</a>
+							</section>
+						</header>
+					</div>
+				</div>
 			</div>
 		</div>
 
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Navbar example --&gt;</span>
-&lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
-    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-2&quot;</span>&gt;ZCSS&lt;<span class="tag">/a</span>&gt;
-    &lt;<span class="tag">/section</span>&gt;
-    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-center&quot;</span>&gt;
-	<span class="com">&lt;!-- centered logo or brand --&gt;</span>
-    &lt;<span class="tag">/section</span>&gt;
-    &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
-        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;input-group input-inline&quot;</span>&gt;
-            &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Home&lt;<span class="tag">/a</span>&gt;
-            &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Component&lt;<span class="tag">/a</span>&gt;
-            &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
-        &lt;<span class="tag">/div</span>&gt;
-    &lt;<span class="tag">/section</span>&gt;
-&lt;<span class="tag">/header</span>&gt;
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;menu-item ml-2&quot;</span>&gt;
+        &lt;<span class="tag">header</span> <span class="atn">class</span>=<span class="atv">&quot;navbar&quot;</span>&gt;
+            &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+                &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mr-2&quot;</span>&gt;ZCSS&lt;<span class="tag">/a</span>&gt;
+            &lt;<span class="tag">/section</span>&gt;
+            &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-center&quot;</span>&gt;
+                <span class="com">&lt;!-- centered logo or brand --&gt;</span>
+            &lt;<span class="tag">/section</span>&gt;
+            &lt;<span class="tag">section</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-section&quot;</span>&gt;
+                &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mx-2&quot;</span>&gt;Home&lt;<span class="tag">/a</span>&gt;
+                &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mx-2&quot;</span>&gt;Component&lt;<span class="tag">/a</span>&gt;
+                &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;navbar-brand mx-2&quot;</span>&gt;Layout&lt;<span class="tag">/a</span>&gt;
+            &lt;<span class="tag">/section</span>&gt;
+        &lt;<span class="tag">/header</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
 		<div class="text-center pt-2 my-2" style="color: #fff">
