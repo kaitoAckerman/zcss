@@ -7,11 +7,11 @@ code {
 
 .code {
   border-radius: $border-radius;
-  color: $body-font-color;
+  color: $c8;
   position: relative;
 
   &::before {
-    color: $gray-color;
+    color: $c8;
     content: attr(data-lang);
     font-size: $font-size-sm;
     position: absolute;
@@ -20,7 +20,7 @@ code {
   }
 
   code {
-    background: $bg-color;
+    background: $c7;
     color: inherit;
     display: block;
     line-height: 1.5;
