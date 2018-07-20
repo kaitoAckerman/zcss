@@ -6,8 +6,8 @@
   "scripts": {
     "start": "concurrently -k \"npm run dev\" \"npm run watch:css\" \"npm run watch:js\"",
     "dev": "lite-server -c my-bs-config.json",
-    "watch:css": "onchange 'src/scss/**' -- npm run build:css",
-    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
+    "watch:css": "onchange \"src/scss/**\" -- npm run build:css",
+    "watch:js": "onchange \"src/js/*.js\" -- npm run build:js",
     "build:css": "node-sass --output-style compressed -o dist src/scss",
     "build:js": "uglifyjs node_modules/jquery/dist/jquery.js src/js/*.js -m -c -o dist/app.js"
   },
