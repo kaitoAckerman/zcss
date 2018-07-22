@@ -1,19 +1,24 @@
-
 // Sass Modules
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 @import "variables";
 @import "base";
+@import "typography";
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Components
 @import "blockquote";
 @import "button";
 @import "code";
 @import "divider";
 @import "form";
-@import "grid";
 @import "link";
 @import "list";
-@import "spacing";
 @import "table";
-@import "typography";
 @import "image";
+@import "navbar";
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Helpers
+@import "grid";
+@import "spacing";
 @import "utility";
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Zcss</title>
 	<link rel="stylesheet" href="zcss.css">
+	<style>
+	.intro{
+		height: 70vh;
+		text-align: center;
+	}
+	</style>
 </head>
+
 <body>
-	<div class="intro">
-		Welcome to Zcss pre alpha build
+	<nav class="navbar container">
+		<a class="nav-brand" href="#">Zcss</a>
+		<a class="menu float-right" href="#">
+			<button>First</button>
+		</a>
+		<a class="menu float-right" href="#">
+			<button>Second</button>
+		</a>
+	</nav>
+	<div class="container">
+		<section class="intro flex-center">
+			<div>
+				<h1>Welcome to Zcss</h1> 
+			 	<p>pre alpha build</p>
+			</div>
+		</section>
 	</div>
 </body>
+
 </html>

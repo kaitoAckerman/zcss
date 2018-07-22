@@ -1,0 +1,14 @@
+.navbar {
+    height: 6rem;
+    padding: 10px;
+    .menu {
+        line-height: 6rem;
+        margin: 0 5px;
+    }
+    .nav-brand {
+        color: $color-secondary;
+        line-height: 6rem;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+}
