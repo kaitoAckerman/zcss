@@ -6,3 +6,8 @@ $color-secondary: #606c76 !default;
 $color-tertiary: #f4f5f6 !default;
 $color-quaternary: #d1d1d1 !default;
 $color-quinary: #e1e1e1 !default;
+
+// Fonts
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+$font: 'Barlow', sans-serif;
