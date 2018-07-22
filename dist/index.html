@@ -8,30 +8,36 @@
 	<title>Zcss</title>
 	<link rel="stylesheet" href="zcss.css">
 	<style>
-	.intro{
-		height: 70vh;
-		text-align: center;
-	}
+		.intro {
+			height: 70vh;
+			text-align: center;
+			background-color: #4ABDAC;
+			color: white;
+		}
+
+		header {
+			background-color: #123833;
+		}
 	</style>
 </head>
 
 <body>
-	<nav class="navbar container">
-		<a class="nav-brand" href="#">Zcss</a>
-		<a class="menu float-right" href="#">
-			<button>First</button>
-		</a>
-		<a class="menu float-right" href="#">
-			<button>Second</button>
-		</a>
-	</nav>
+	<header>
+		<nav class="navbar container">
+			<a class="nav-brand" href="#">Zcss</a>
+			<a class="menu float-right" href="#">
+				<button>Components</button>
+			</a>
+		</nav>
+	</header>
+	<section class="intro flex-center">
+		<div>
+			<h1>Welcome to Zcss</h1>
+			<p>pre alpha build</p>
+			<a href="#start" class="btn btn-secondary">Getting Started</a>
+		</div>
+	</section>
 	<div class="container">
-		<section class="intro flex-center">
-			<div>
-				<h1>Welcome to Zcss</h1> 
-			 	<p>pre alpha build</p>
-			</div>
-		</section>
 	</div>
 </body>
 
