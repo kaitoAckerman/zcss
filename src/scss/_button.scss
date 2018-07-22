@@ -1,7 +1,6 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .btn,
-button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
@@ -39,10 +38,10 @@ input[type='submit'] {
 	}
 	&.btn-secondary{
 		background-color: $color-secondary;
-		border: $color-secondary;
+		border: 1px solid $color-secondary;
+		color: $color-initial;
 		&:hover{
 			box-shadow: 0px 0px 10px $color-secondary;
-			color: $color-initial;
 		}
 	}
 	&.btn-outline {
