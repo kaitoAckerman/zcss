@@ -1,0 +1,10 @@
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+a {
+	color: $color-tertiary;
+	text-decoration: none;
+	&:focus,
+	&:hover {
+		color: $color-tertiary;
+	}
+}

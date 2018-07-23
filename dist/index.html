@@ -1,39 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="app.css">
-	<title>ZCSS</title>
+	<title>Zcss</title>
+	<link rel="stylesheet" href="zcss.css">
+	<style>
+		.intro {
+			height: 70vh;
+			text-align: center;
+			background-color: #4ABDAC;
+			color: white;
+		}
+
+		header {
+			background-color: #123833;
+		}
+
+		.demo {
+			margin: 10rem 0rem;
+		}
+	</style>
 </head>
+
 <body>
-	<div class="menu mx-2 my-1">
-		<div class="menu-item ml-2">
-			<header class="navbar">
-				<section class="navbar-section">
-					<a href="#" class="navbar-brand mr-2">ZCSS</a>
-				</section>
-				<section class="navbar-center">
--					<!-- centered logo or brand -->
--				</section>
-				<section class="navbar-section mx-2 px-2">
-					<a href="#" class="navbar-brand mx-2">Home</a>
-					<a href="component.html" class="navbar-brand mx-2">Components</a>
-					<a href="layout.html" class="navbar-brand mx-2">Layout</a>
-				</section>
-			</header>
+
+	<header>
+		<nav class="navbar container">
+			<a class="nav-brand" href="/">Zcss</a>
+			<a class="menu float-right" href="#">
+				<button class="btn btn-primary">Components</button>
+			</a>
+		</nav>
+	</header>
+
+	<section class="intro flex-center">
+		<div>
+			<h1>Welcome to Zcss</h1>
+			<p>pre alpha build</p>
+			<a href="#start" class="btn btn-secondary">Getting Started</a>
 		</div>
+	</section>
+
+	<div class="container">
+
+		<section class="demo">
+			<h2>Navbar</h2>
+
+			<nav class="navbar primary container">
+				<a class="nav-brand" href="#">Zcss</a>
+				<a class="menu float-right" href="#">
+					<button class="btn btn-secondary">First</button>
+				</a>
+				<a class="menu float-right" href="#">
+					<button class="btn btn-secondary">Second</button>
+				</a>
+			</nav>
+
+			<pre>
+
+	&lt;nav class="navbar primary container"&gt;
+		&lt;a class="nav-brand" href="#"&gt;Zcss&lt;/a&gt;
+		&lt;a class="menu float-right" href="#"&gt;
+			&lt;button class="btn btn-secondary"&gt;First&lt;/button&gt;
+		&lt;/a&gt;
+		&lt;a class="menu float-right" href="#"&gt;
+			&lt;button class="btn btn-secondary"&gt;Second&lt;/button&gt;
+		&lt;/a&gt;
+	&lt;/nav&gt;
+			</pre>
+		</section>
+
 	</div>
-	<div class="container" style="padding-bottom: 7.5rem; padding-top: 8.5rem;">
-		<div class="column text-center" style="margin-bottom: 0.5rem;">
-			<h1 class="title">zcss</h1>
-			<p class="description">zcss boilerplate pre-alpha</p>
-			<button class="btn btn-primary" style="margin-bottom: 4rem; margin-top: 2rem;">Getting Started</button>
-		</div>
-	</div>
-	<script src="app.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 
 </html>
