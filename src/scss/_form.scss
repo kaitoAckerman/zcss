@@ -24,7 +24,7 @@ select {
 	border-radius: 5rem;
 	box-shadow: none;
 	box-sizing: inherit; // Forced to replace inherit values of the normalize.css
-	height: 3.8rem;
+	height: 3rem;
 	padding: .6rem 2rem; // The .6rem vertically centers text on FF, ignored by Webkit
 	width: 100%;
 	&:focus {

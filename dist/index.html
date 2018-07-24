@@ -22,6 +22,10 @@
 		.demo {
 			margin: 10rem 0rem;
 		}
+
+		.row {
+			padding: 5px 0px 5px 0px;
+		}
 	</style>
 </head>
 
@@ -30,7 +34,7 @@
 	<header>
 		<nav class="navbar container">
 			<a class="nav-brand" href="/">Zcss</a>
-			<a class="menu float-right" href="#">
+			<a class="menu float-right" href="component.html">
 				<button class="btn btn-primary">Components</button>
 			</a>
 		</nav>
@@ -73,6 +77,68 @@
 			</pre>
 		</section>
 
+		<section class="demo">
+			<h2>Flexbox Grid</h2>
+
+			<div class="row">
+				<div class="col col-90">col-90</div>
+			</div>
+			<div class="row">
+				<div class="col col-75">col-75</div>
+			</div>
+			<div class="row">
+				<div class="col col-50">col-50</div>
+			</div>
+			<div class="row">
+				<div class="col col-25">col-25</div>
+			</div>
+			<div class="row">
+				<div class="col col-10">col-10</div>
+			</div>
+
+			<pre>
+		
+	&lt;div class="row"&gt;
+		&lt;div class="col col-90"&gt;col-90&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-50"&gt;col-50&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-10"&gt;col-10&lt;/div&gt;
+	&lt;/div&gt;
+			</pre>
+
+			<div class="row">
+				<div class="col col-offset-10">col-offset-10</div>
+			</div>
+			<div class="row">
+				<div class="col col-offset-25">col-offset-25</div>
+			</div>
+			<div class="row">
+				<div class="col col-offset-50">col-offset-50</div>
+			</div>
+			<div class="row">
+				<div class="col col-offset-75">col-offset-75</div>
+			</div>
+			<div class="row">
+				<div class="col col-offset-90">col-offset-90</div>
+			</div>
+
+			<pre>
+
+	&lt;div class="row"&gt;
+		&lt;div class="col col-offset-90"&gt;col-offset-90&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-offset-50"&gt;col-offset-50&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col col-offset-10"&gt;col-offset-10&lt;/div&gt;
+	&lt;/div&gt;
+			</pre>
+			
+		</section>
 	</div>
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>

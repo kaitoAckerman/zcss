@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="zcss.css">
-    <title>ZCSS</title>
+    <title>Zcss</title>
+    <style>
+        .intro {
+            height: 70vh;
+            text-align: center;
+            background-color: #4ABDAC;
+            color: white;
+        }
+
+        header {
+            background-color: #123833;
+        }
+
+        .demo {
+            margin: 10rem 0rem;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="menu mx-2 my-1">
-		<div class="menu-item ml-2">
-			<header class="navbar">
-				<section class="navbar-section">
-					<a href="index.html" class="navbar-brand mr-2">ZCSS</a>
-				</section>
-				<section class="navbar-center">
-					<!-- centered logo or brand -->
-				</section>
-				<section class="navbar-section">
-					<a href="index.html" class="navbar-brand mx-2">Home</a>
-					<a href="#" class="navbar-brand mx-2">Component</a>
-					<a href="layout.html" class="navbar-brand mx-2">Layout</a>
-				</section>
-			</header>
-		</div>
-	</div>
+    <header>
+        <nav class="navbar container">
+            <a class="nav-brand" href="/">Zcss</a>
+            <a class="menu float-right" href="component.html">
+                <button class="btn btn-primary">Components</button>
+            </a>
+        </nav>
+    </header>
 
-	<div class="container my-2">
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Cards</h1>
-			<p>A list of card example</p>
-		</div>
-		<div class="row col-oneline">
-			<div class="column col-4 mx-2 my-2">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5">Put your title here</div>
-						<div class="card-subtitle text-gray">This is subtitle</div>
-					</div>
-					<div class="card-body">
-						Insert your content here
-					</div>
-					<div class="card-footer">
-						<button class="btn btn-primary">Button</button>
-					</div>
-				</div>
-			</div>
-			<div class="column col-4 mx-2 my-2">
-				<div class="card">
-					<div class="card-image">
-						<img src="colors.jpg" class="img-responsive">
-					</div>
-					<div class="card-header">
-						<div class="card-title h5">Color list</div>
-						<div class="card-subtitle text-gray">Source: Google</div>
-					</div>
-					<div class="card-body">
-						Each color have their own meaning.
-					</div>
-				</div>
-			</div>
-			<div class="column col-4 mx-2 my-2">
-				<div class="card">
-					<div class="card-image">
-						<img src="colors.jpg" class="img-responsive">
-					</div>
-					<div class="card-header">
-						<div class="card-title h5">Card Title</div>
-						<div class="card-subtitle text-gray">Rawang, Selangor</div>
-					</div>
-					<div class="card-body">
-						<div class="card" style="background: #34887C">
-							<div class="row col-oneline mx-2 my-2">
-								<div class="column col-2 mx-2 my-2">
-									<h1 id="special-color">16</h1>
-								</div>
-								<div class="column col-8 mx-2 my-2" id="special-color">
-									<h4>July</h4>
-									<h5>7pm - 9pm</h5>
-								</div>
-							</div>
-						</div>
-						<div class="card-subtitle text-gray">1 day from now</div>
-						<p>Details...</p>
-					</div>
-					<div class="card-footer">
-						<button class="btn btn-primary">Button</button>
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="container">
+        <section class="demo">
+            <h2>Empty States</h2>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Simple card example --&gt;</span>
+            <div class="col">
+                <div class="empty">
+                    <p class="empty-title">You have no new messages</p>
+                    <p class="empty-title">Click the button to start a conversation</p>
+                    <div class="empty-action">
+                        <button class="btn btn-primary">Send a message</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="empty">
+                    <p class="empty-title">You've successfully signed up</p>
+                    <p class="empty-title">Click the button to invite your friends</p>
+                    <div class="empty-action">
+                        <button class="btn btn-primary">Invite your friends</button>
+                    </div>
+                    <div class="empty-action">
+                        <button class="btn btn-link">Skip</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="empty">
+                    <p class="empty-title">You are not following anyone</p>
+                    <p class="empty-title">Start to meet new friends</p>
+                    <div class="empty-action input label-inline">
+                        <input class="input" type="text" placeholder="">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <pre>
+        
+    &lt;div class="col"&gt;
+        &lt;div class="empty"&gt;
+            &lt;p class="empty-title"&gt;You have no new messages&lt;/p&gt;
+            &lt;p class="empty-title"&gt;Click the button to start a conversation&lt;/p&gt;
+            &lt;div class="empty-action"&gt;
+                &lt;button class="btn btn-primary"&gt;Send a message&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+            </pre>
+        </section>
+    </div>
+
+    <div class="container my-2">
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Cards</h1>
+            <p>A list of card example</p>
+        </div>
+        <div class="row col-oneline">
+            <div class="column col-4 mx-2 my-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h5">Put your title here</div>
+                        <div class="card-subtitle text-gray">This is subtitle</div>
+                    </div>
+                    <div class="card-body">
+                        Insert your content here
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-4 mx-2 my-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="colors.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h5">Color list</div>
+                        <div class="card-subtitle text-gray">Source: Google</div>
+                    </div>
+                    <div class="card-body">
+                        Each color have their own meaning.
+                    </div>
+                </div>
+            </div>
+            <div class="column col-4 mx-2 my-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="colors.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h5">Card Title</div>
+                        <div class="card-subtitle text-gray">Rawang, Selangor</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card" style="background: #34887C">
+                            <div class="row col-oneline mx-2 my-2">
+                                <div class="column col-2 mx-2 my-2">
+                                    <h1 id="special-color">16</h1>
+                                </div>
+                                <div class="column col-8 mx-2 my-2" id="special-color">
+                                    <h4>July</h4>
+                                    <h5>7pm - 9pm</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-subtitle text-gray">1 day from now</div>
+                        <p>Details...</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Simple card example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-image&quot;</span>&gt;
         &lt;<span class="tag">img</span> <span class="atn">src</span>=<span class="atv">&quot;colors.jpg&quot;</span>&gt; <span class="atn">class</span>=<span class="atv">&quot;img-responsive&quot;</span>&gt;
@@ -109,26 +171,26 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Buttons</h1>
-			<p>A list of button example</p>
-		</div>
-		<div class="card">
-			<div class="row col-oneline m-0 my-2">
-				<div class="mx-2">
-					<div class="btn">Default Button</div>
-					<div class="btn btn-link">Link Button</div>
-					<div class="btn btn-primary">Primary Button</div>
-					<div class="btn btn-success">Success Button</div>
-					<div class="btn btn-error">Error Button</div>
-				</div>
-			</div>
-			<div class="mx-2 my-2">
-				<div class="btn btn-primary btn-block">Block Button</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Buttons</h1>
+            <p>A list of button example</p>
+        </div>
+        <div class="card">
+            <div class="row col-oneline m-0 my-2">
+                <div class="mx-2">
+                    <div class="btn">Default Button</div>
+                    <div class="btn btn-link">Link Button</div>
+                    <div class="btn btn-primary">Primary Button</div>
+                    <div class="btn btn-success">Success Button</div>
+                    <div class="btn btn-error">Error Button</div>
+                </div>
+            </div>
+            <div class="mx-2 my-2">
+                <div class="btn btn-primary btn-block">Block Button</div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Buttons example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Buttons example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;Default Button&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Link Button&lt;<span class="tag">/div</span>&gt;
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Primary Button&lt;<span class="tag">/div</span>&gt;
@@ -137,24 +199,24 @@
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary btn-block&quot;</span>&gt;Block Button&lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Breadcrumb</h1>
-			<p>Breadcrumb example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item">
-						<a href="#">Home</a>
-					</li>
-					<li class="breadcrumb-item">
-						<a href="#">About</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Breadcrumb example --&gt;</span>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Breadcrumb</h1>
+            <p>Breadcrumb example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Breadcrumb example --&gt;</span>
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;breadcrumb-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Home&lt;<span class="tag">/a</span>&gt;
@@ -165,34 +227,34 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Forms</h1>
-			<p>Forms example</p>
-		</div>
-		<div class="row col-oneline">
-			<div class="column col-4 mx-2 my-2">
-				<div class="card">
-					<div class="card-header">
-						<div class="card-title h5"></div>
-					</div>
-					<div class="card-body">
-						<div class="form-group">
-							<label class="form-label" for="">Username/Email</label>
-							<input class="form-input" type="text" id="" placeholder="">
-						</div>
-						<div class="form-group">
-							<label class="form-label" for="">Password</label>
-							<input class="form-input" type="text" id="" placeholder="">
-						</div>
-					</div>
-					<div class="card-footer">
-						<button class="btn btn-primary">Login</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Forms example --&gt;</span>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Forms</h1>
+            <p>Forms example</p>
+        </div>
+        <div class="row col-oneline">
+            <div class="column col-4 mx-2 my-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h5"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="form-label" for="">Username/Email</label>
+                            <input class="form-input" type="text" id="" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">Password</label>
+                            <input class="form-input" type="text" id="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Forms example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
     &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;&quot;</span>&gt;Username/Email&lt;<span class="tag">/label</span>&gt;
     &lt;<span class="tag">input</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">type</span>=<span class="atv">&quot;text&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;&quot;</span>&gt;
@@ -203,39 +265,39 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Pagination</h1>
-			<p>Pagination example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<ul class="pagination">
-					<li class="page-item disabled">
-						<a href="#" tabindex="-1">Previous</a>
-					</li>
-					<li class="page-item active">
-						<a href="#">1</a>
-					</li>
-					<li class="page-item">
-						<a href="#">2</a>
-					</li>
-					<li class="page-item">
-						<a href="#">3</a>
-					</li>
-					<li class="page-item">
-						<span>...</span>
-					</li>
-					<li class="page-item">
-						<a href="#">12</a>
-					</li>
-					<li class="page-item">
-						<a href="#">Next</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Pagination</h1>
+            <p>Pagination example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <span>...</span>
+                    </li>
+                    <li class="page-item">
+                        <a href="#">12</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Pagination example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Pagination example --&gt;</span>
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;pagination&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;page-item disabled&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;Previous&lt;<span class="tag">/a</span>&gt;
@@ -261,25 +323,24 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Chips</h1>
-			<p>Chips example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<span class="chip">Selangor</span>
-				<span class="chip">
-					Tags
-					<a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
-				</span>
-				<div class="chip">
-					<img src="img/avatar-1.png" class="avatar avatar-sm">
-					Member name
-				</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Chips</h1>
+            <p>Chips example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <span class="chip">Selangor</span>
+                <span class="chip">
+                    Tags
+                    <a href="#" class="btn btn-clear" aria-label="Close" role="button"></a>
+                </span>
+                <div class="chip">
+                    <img src="img/avatar-1.png" class="avatar avatar-sm"> Member name
+                </div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Chips example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Chips example --&gt;</span>
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;Selangor&lt;<span class="tag">/span</span>&gt;
 &lt;<span class="tag">span</span> <span class="atn">class</span>=<span class="atv">&quot;chip&quot;</span>&gt;
     Tags
@@ -291,29 +352,29 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Panels</h1>
-			<p>Panels example</p>
-		</div>
-		<div class="panel">
-			<div class="panel-header">
-				<div class="panel-title">Comments</div>
-			</div>
-			<div class="panel-nav">
-				<!-- navigation components: tabs, breadcrumbs or pagination -->
-			</div>
-			<div class="panel-body">
-				<!-- contents -->
-			</div>
-			<div class="panel-footer">
-				<div class="input-group">
-					<input type="text" class="form-input" placeholder="Say something...">
-					<button class="btn btn-primary input-group-btn">Send</button>
-				</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Panels</h1>
+            <p>Panels example</p>
+        </div>
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title">Comments</div>
+            </div>
+            <div class="panel-nav">
+                <!-- navigation components: tabs, breadcrumbs or pagination -->
+            </div>
+            <div class="panel-body">
+                <!-- contents -->
+            </div>
+            <div class="panel-footer">
+                <div class="input-group">
+                    <input type="text" class="form-input" placeholder="Say something...">
+                    <button class="btn btn-primary input-group-btn">Send</button>
+                </div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Panels example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Panels example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-header&quot;</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;panel-title&quot;</span>&gt;Comments&lt;<span class="tag">/div</span>&gt;
@@ -333,40 +394,40 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Popovers</h1>
-			<p>Popovers example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<div class="popover popover">
-					<button class="btn btn-primary">top popover</button>
-					<div class="popover-container">
-						<div class="card">
-						<div class="card-header"></div>
-						<div class="card-body text-center">
-							This top popover
-						</div>
-						<div class="card-footer"></div>
-						</div>
-					</div>
-				</div>
-				<div class="popover popover-right">
-					<button class="btn btn-primary">right popover</button>
-					<div class="popover-container">
-						<div class="card">
-							<div class="card-header"></div>
-							<div class="card-body text-center">
-								This is right popover
-							</div>
-							<div class="card-footer"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Popovers</h1>
+            <p>Popovers example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <div class="popover popover">
+                    <button class="btn btn-primary">top popover</button>
+                    <div class="popover-container">
+                        <div class="card">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center">
+                                This top popover
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popover popover-right">
+                    <button class="btn btn-primary">right popover</button>
+                    <div class="popover-container">
+                        <div class="card">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center">
+                                This is right popover
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Popovers example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Popovers example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover popover-right&quot;</span>&gt;
     &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;right popover&lt;<span class="tag">/button</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;popover-container&quot;</span>&gt;
@@ -381,28 +442,28 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Steps</h1>
-			<p>Steps example</p>
-		</div>
-		<div class="card">
-			<ul class="step">
-				<li class="step-item">
-					<a href="#" class="tooltip" data-tooltip="Step 1">Step 1</a>
-				</li>
-				<li class="step-item active">
-					<a href="#" class="tooltip" data-tooltip="Step 2">Step 2</a>
-				</li>
-				<li class="step-item">
-					<a href="#" class="tooltip" data-tooltip="Step 3">Step 3</a>
-				</li>
-				<li class="step-item">
-					<a href="#" class="tooltip" data-tooltip="Step 4">Step 4</a>
-				</li>
-			</ul>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Steps</h1>
+            <p>Steps example</p>
+        </div>
+        <div class="card">
+            <ul class="step">
+                <li class="step-item">
+                    <a href="#" class="tooltip" data-tooltip="Step 1">Step 1</a>
+                </li>
+                <li class="step-item active">
+                    <a href="#" class="tooltip" data-tooltip="Step 2">Step 2</a>
+                </li>
+                <li class="step-item">
+                    <a href="#" class="tooltip" data-tooltip="Step 3">Step 3</a>
+                </li>
+                <li class="step-item">
+                    <a href="#" class="tooltip" data-tooltip="Step 4">Step 4</a>
+                </li>
+            </ul>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Steps example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Steps example --&gt;</span>
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;step&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;step-item&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;tooltip&quot;</span> <span class="atn">data-tooltip</span>=<span class="atv">&quot;Step 1&quot;</span>&gt;Step 1&lt;<span class="tag">/a</span>&gt;
@@ -419,24 +480,24 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Tabs</h1>
-			<p>Tabs example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<ul class="tab tab-block">
-					<li class="tab-item active">
-						<a href="#">Components</a>
-					</li>
-					<li class="tab-item">
-						<a href="#">Layout</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Tabs</h1>
+            <p>Tabs example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <ul class="tab tab-block">
+                    <li class="tab-item active">
+                        <a href="#">Components</a>
+                    </li>
+                    <li class="tab-item">
+                        <a href="#">Layout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tabs example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tabs example --&gt;</span>
 &lt;<span class="tag">ul</span> <span class="atn">class</span>=<span class="atv">&quot;tab tab-block&quot;</span>&gt;
     &lt;<span class="tag">li</span> <span class="atn">class</span>=<span class="atv">&quot;tab-item active&quot;</span>&gt;
         &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#&quot;</span>&gt;Components&lt;<span class="tag">/a</span>&gt;
@@ -447,28 +508,29 @@
 &lt;<span class="tag">/ul</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Tiles</h1>
-			<p>Tiles example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<div class="tile">
-					<div class="tile-icon">
-						<div class="example-tile-icon">
-							<i class="icon icon-file centered"></i>
-						</div>
-					</div>
-					<div class="tile-content">
-						<p class="tile-title">One Punch Man</p>
-						<p class="tile-subtitle text-gray">World's Strongest Hero seeks any enemies to challenge him who were too strong for any hero or enemy to defeat...</p>
-					</div>
-					<div class="tile-action"></div>
-				</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Tiles</h1>
+            <p>Tiles example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <div class="tile">
+                    <div class="tile-icon">
+                        <div class="example-tile-icon">
+                            <i class="icon icon-file centered"></i>
+                        </div>
+                    </div>
+                    <div class="tile-content">
+                        <p class="tile-title">One Punch Man</p>
+                        <p class="tile-subtitle text-gray">World's Strongest Hero seeks any enemies to challenge him who were too strong for any hero or enemy
+                            to defeat...</p>
+                    </div>
+                    <div class="tile-action"></div>
+                </div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tiles example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tiles example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile&quot;</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;tile-icon&quot;</span>&gt;
         &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;example-tile-icon&quot;</span>&gt;
@@ -483,34 +545,34 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Modals</h1>
-			<p>Modals example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<button class="btn btn-primary">Open modal</button>
-				<div class="modal" id="modal-id">
-					<a href="#close" class="modal-overlay" aria-label="Close"></a>
-					<div class="modal-container">
-						<div class="modal-header">
-							<a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
-							<div class="modal-title h5">Modal title</div>
-						</div>
-						<div class="modal-body">
-							<div class="content">
-								Content here
-							</div>
-						</div>
-						<div class="modal-footer">
-							<button class="btn btn-primary">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Modals</h1>
+            <p>Modals example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <button class="btn btn-primary">Open modal</button>
+                <div class="modal" id="modal-id">
+                    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+                            <div class="modal-title h5">Modal title</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                                Content here
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Modals example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Modals example --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal active&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;modal-id&quot;</span>&gt;
     &lt;<span class="tag">a</span> <span class="atn">href</span>=<span class="atv">&quot;#close&quot;</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span> <span class="atn">aria-label</span>=<span class="atv">&quot;Close&quot;</span>&gt;&lt;<span class="tag">/a</span>&gt;
     &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
@@ -530,37 +592,37 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
-		<div class="text-center pt-2 my-2" id="special-color">
-			<h1>Tables</h1>
-			<p>Tables example</p>
-		</div>
-		<div class="card">
-			<div class="mx-2 my-2">
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th>Table head</th>
-							<th>Table head</th>
-							<th>Table head</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="active">
-							<td>content</td>
-							<td>content</td>
-							<td>content</td>
-						</tr>
-						<tr class="active">
-							<td>content</td>
-							<td>content</td>
-							<td>content</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
+        <div class="text-center pt-2 my-2" id="special-color">
+            <h1>Tables</h1>
+            <p>Tables example</p>
+        </div>
+        <div class="card">
+            <div class="mx-2 my-2">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Table head</th>
+                            <th>Table head</th>
+                            <th>Table head</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                        </tr>
+                        <tr class="active">
+                            <td>content</td>
+                            <td>content</td>
+                            <td>content</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tables example --&gt;</span>
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- Tables example --&gt;</span>
 &lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-striped table-hover&quot;</span>&gt;
     &lt;<span class="tag">thead</span>&gt;
         &lt;<span class="tag">tr</span>&gt;
