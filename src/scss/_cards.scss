@@ -30,14 +30,26 @@
         padding: .8rem .8rem 0 .8rem;
         .card-detail {
             flex: 1 1 auto;
-            padding: .8rem .8rem 0 .8rem;
+            //padding: .8rem .8rem 0 .8rem;
             display: flex;
             border-radius: 10%;
+            .col {
+                h1 {
+                    font-size: 6rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
         }
         .card-content {
             flex: 1 1 auto;
             padding: .8rem;
             padding-bottom: 0;
+        }
+        .card-date {
+            flex: 1 1 auto;
+            padding: .8rem;
+            padding-bottom: 0;
+            font-size: 20px;
         }
     }
     
