@@ -186,6 +186,20 @@
             </div>
         </div>
 
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- List card example --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width: 25%&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+        &lt;<span class="tag">h4</span>&gt;&lt;<span class="tag">b</span>&gt;Board&lt;<span class="tag">/b</span>&gt;&lt;<span class="tag">/h4</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-shadow&quot;</span>&gt;
+            &lt;<span class="tag">p</span>&gt;Zammani&lt;<span class="tag">/p</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-shadow&quot;</span>&gt;
+            &lt;<span class="tag">p</span>&gt;Zcss&lt;<span class="tag">/p</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         <div class="text-center pt-2 my-2" id="special-color">
             <h1>Buttons</h1>
             <p>A list of button example</p>
@@ -1271,21 +1285,42 @@
                 <div class="text-center pt-2 my-2">
                     <h3>Tooltips</h3>
                 </div>
-                <button class="tooltip">Right Tooltip
+                <div class="tooltip">
+                    <div class="btn">Right Tooltip</div>
                     <span class="tooltiptext right">Tooltip text</span>
-                </button>
-                <button class="tooltip">Top Tooltip
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Top Tooltip</div>
                     <span class="tooltiptext top">Tooltip text</span>
-                </button>
-                <button class="tooltip">Bottom Tooltip
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Bottom Tooltip</div>
                     <span class="tooltiptext bottom">Tooltip text</span>
-                </button>
-                <button class="tooltip">Left Tooltip
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Left Tooltip</div>
                     <span class="tooltiptext left">Tooltip text</span>
-                </button>
+                </div>
 
-                <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>top tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip tooltip-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>right tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+<pre>
+
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Right Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext right"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Top Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext top"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Bottom Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext bottm"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Left Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext left"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+			</pre>
 
                 <div class="text-center pt-2 my-2">
                     <h3>Typography</h3>
