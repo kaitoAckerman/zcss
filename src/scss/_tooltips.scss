@@ -2,7 +2,6 @@
     position: relative;
     display: inline-block;
 
-/* Tooltip text */
     .tooltiptext {
         visibility: hidden;
         width: 120px;
@@ -22,7 +21,7 @@
                 content: " ";
                 position: absolute;
                 top: 50%;
-                right: 100%; /* To the left of the tooltip */
+                right: 100%;
                 margin-top: -5px;
                 border-width: 5px;
                 border-style: solid;
@@ -37,7 +36,7 @@
                 content: " ";
                 position: absolute;
                 top: 50%;
-                left: 100%; /* To the right of the tooltip */
+                left: 100%;
                 margin-top: -5px;
                 border-width: 5px;
                 border-style: solid;
@@ -48,12 +47,12 @@
             width: 120px;
             bottom: 100%;
             left: 50%; 
-            margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+            margin-left: -60px;
             
             &:after {
                 content: " ";
                 position: absolute;
-                top: 100%; /* At the bottom of the tooltip */
+                top: 100%;
                 left: 50%;
                 margin-left: -5px;
                 border-width: 5px;
@@ -65,12 +64,12 @@
             width: 120px;
             top: 100%;
             left: 50%; 
-            margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+            margin-left: -60px;
 
             &:after {
                 content: " ";
                 position: absolute;
-                bottom: 100%;  /* At the top of the tooltip */
+                bottom: 100%;
                 left: 50%;
                 margin-left: -5px;
                 border-width: 5px;

@@ -5,7 +5,7 @@
         position: relative;
 
         .dropdown-content { 
-        visibility: hidden; /* hides sub-menu */
+        visibility: hidden;
         opacity: 0;
         position: absolute;
         top: 100%;
@@ -48,11 +48,11 @@
     .dropdown-menu:focus .dropdown-content,
     .dropdown-menu:focus-within .dropdown-content,
     .dropdown-menu:hover .dropdown-content {
-    visibility: visible; /* shows sub-menu */
+    visibility: visible;
     opacity: 1;
     z-index: 1;
     transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+    transition-delay: 0s, 0s, 0.3s;
     }
 
 }
