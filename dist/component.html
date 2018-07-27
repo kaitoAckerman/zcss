@@ -1240,47 +1240,49 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 
                 <div class="text-center pt-2 my-2">
-                    <h3>Toast</h3>
+                    <h3>Alert</h3>
                 </div>
-                <div class="toastt">
-                    <div class="column col-9 col-sm-12">
-                        <div class="toast">
-                            <button class="btn btn-clear float-right"></button>
-                            <h6>Toast Title</h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
+                <div class="alert">
+                    <div class="alert1 success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Success!
                     </div>
-                    <div class="column col-9 col-sm-12">
-                        <div class="toast toast-primary">
-                            <button class="btn btn-clear float-right"></button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
+                    <div class="alert1 danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Danger!
                     </div>
-                    <div class="row col-oneline">
-                        <div class="column col-sm-12" style="padding-right: 20px; padding-left: 10px;">
-                            <div class="toast toast-success">
-                                <button class="btn btn-clear float-right"></button>Toast success
-                            </div>
-                        </div>
-                        <div class="column col-sm-12" style="padding-right: 20px;">
-                            <div class="toast toast-warning">
-                                <button class="btn btn-clear float-right"></button>Toast warning
-                            </div>
-                        </div>
-                        <div class="column col-sm-12" style="padding-right: 20px;">
-                            <div class="toast toast-error">
-                                <button class="btn btn-clear float-right"></button>Toast error
-                            </div>
-                        </div>
+                    <div class="alert2 success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Success!
+                    </div>
+                    <div class="alert2 danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Danger!
                     </div>
                 </div>
 
-                <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast"</span>&gt;</span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<pre>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast toast-primary"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-clear float-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+    &lt;div class="alert"&gt;
+        &lt;div class="alert1 success"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt;
+            Success!
+        &lt;/div&gt;
+        &lt;div class="alert1 danger"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt; 
+            Danger!
+        &lt;/div&gt;
+        &lt;div class="alert2 success"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt; 
+            Success!
+        &lt;/div&gt;
+        &lt;div class="alert2 danger"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt;
+            Danger!
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+</pre>
 
                 <div class="text-center pt-2 my-2">
                     <h3>Tooltips</h3>
@@ -1978,6 +1980,7 @@
     
 </pre>
 
+                
                 <script src="app.js"></script>
 </body>
 
