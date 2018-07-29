@@ -143,6 +143,11 @@
 			flex: 0 0 90%;
 			max-width: 90%;
 			@extend .custom;
+		}
+		&.col-100 {
+			flex: 0 0 100%;
+			max-width: 100%;
+			@extend .custom;
 		} // .col-* vertically aligns an individual .col
 		.col-top {
 			align-self: flex-start;
