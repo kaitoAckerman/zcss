@@ -79,3 +79,34 @@ input[type='submit'] {
 		}
 	}
 }
+
+.button-group {
+	display: inline-block;
+	
+	.button {
+		background-color: $color-primary;
+		border: none;
+		color: white;
+		padding: 5px 25px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+
+  &.fixed .button {
+	margin-bottom: 1px;
+  }
+
+  &.radius {
+	.button:first-child {
+	  border-radius: 5rem 0 0 5rem;
+	}
+	.button:last-child {
+	  border-radius: 0 5rem 5rem 0;
+	}
+  }
+}

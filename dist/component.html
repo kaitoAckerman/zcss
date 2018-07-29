@@ -429,6 +429,35 @@
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
+        <div class="text-center pt-2 my-2">
+            <h3>List Card</h3>
+        </div>
+        <div class="card" style="width: 25%">
+            <div class="container">
+                <h4><b>Board</b></h4> 
+                <div class="card-shadow">
+                    <p>Zammani</p>
+                </div>
+                <div class="card-shadow">
+                    <p>Zcss</p>
+                </div>
+            </div>
+        </div>
+
+        <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- List card example --&gt;</span>
+&lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card&quot;</span> <span class="atn">style</span>=<span class="atv">&quot;width: 25%&quot;</span>&gt;
+    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+        &lt;<span class="tag">h4</span>&gt;&lt;<span class="tag">b</span>&gt;Board&lt;<span class="tag">/b</span>&gt;&lt;<span class="tag">/h4</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-shadow&quot;</span>&gt;
+            &lt;<span class="tag">p</span>&gt;Zammani&lt;<span class="tag">/p</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;card-shadow&quot;</span>&gt;
+            &lt;<span class="tag">p</span>&gt;Zcss&lt;<span class="tag">/p</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;
+</code></pre>
+
         <div class="text-center pt-2 my-2" id="special-color">
             <h1>Buttons</h1>
             <p>A list of button example</p>
@@ -1469,70 +1498,89 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 
                 <div class="text-center pt-2 my-2">
-                    <h3>Toast</h3>
+                    <h3>Alert</h3>
                 </div>
-                <div class="toastt">
-                    <div class="column col-9 col-sm-12">
-                        <div class="toast">
-                            <button class="btn btn-clear float-right"></button>
-                            <h6>Toast Title</h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
+                <div class="alert">
+                    <div class="alert1 success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Success!
                     </div>
-                    <div class="column col-9 col-sm-12">
-                        <div class="toast toast-primary">
-                            <button class="btn btn-clear float-right"></button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </div>
+                    <div class="alert1 danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Danger!
                     </div>
-                    <div class="row col-oneline">
-                        <div class="column col-sm-12" style="padding-right: 20px; padding-left: 10px;">
-                            <div class="toast toast-success">
-                                <button class="btn btn-clear float-right"></button>Toast success
-                            </div>
-                        </div>
-                        <div class="column col-sm-12" style="padding-right: 20px;">
-                            <div class="toast toast-warning">
-                                <button class="btn btn-clear float-right"></button>Toast warning
-                            </div>
-                        </div>
-                        <div class="column col-sm-12" style="padding-right: 20px;">
-                            <div class="toast toast-error">
-                                <button class="btn btn-clear float-right"></button>Toast error
-                            </div>
-                        </div>
+                    <div class="alert2 success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Success!
+                    </div>
+                    <div class="alert2 danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Danger!
                     </div>
                 </div>
 
-                <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast"</span>&gt;</span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<pre>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toast toast-primary"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-clear float-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+    &lt;div class="alert"&gt;
+        &lt;div class="alert1 success"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt;
+            Success!
+        &lt;/div&gt;
+        &lt;div class="alert1 danger"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt; 
+            Danger!
+        &lt;/div&gt;
+        &lt;div class="alert2 success"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt; 
+            Success!
+        &lt;/div&gt;
+        &lt;div class="alert2 danger"&gt;
+            &lt;span class="closebtn" onclick="this.parentElement.style.display='none';"&gt;&times;&lt;/span&gt;
+            Danger!
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+</pre>
 
                 <div class="text-center pt-2 my-2">
                     <h3>Tooltips</h3>
                 </div>
-                <div class="tooltips">
-                    <div class="row col-oneline">
-                        <div class="column col-xs-12" style="padding: 20px;">
-                            <button class="btn btn-primary tooltip" data-tooltip="Top Tooltip Text">top tooltip</button>
-                        </div>
-                        <div class="column col-xs-12" style="padding: 20px;">
-                            <button class="btn btn-primary tooltip tooltip-right" data-tooltip="Right Tooltip Text">right tooltip</button>
-                        </div>
-                        <div class="column col-xs-12" style="padding: 20px;">
-                            <button class="btn btn-primary tooltip tooltip-bottom" data-tooltip="Bottom Tooltip Text">bottom tooltip</button>
-                        </div>
-                        <div class="column col-xs-12" style="padding: 20px;">
-                            <button class="btn btn-primary tooltip tooltip-left" data-tooltip="Left Tooltip Text">left tooltip</button>
-                        </div>
-                    </div>
+                <div class="tooltip">
+                    <div class="btn">Right Tooltip</div>
+                    <span class="tooltiptext right">Tooltip text</span>
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Top Tooltip</div>
+                    <span class="tooltiptext top">Tooltip text</span>
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Bottom Tooltip</div>
+                    <span class="tooltiptext bottom">Tooltip text</span>
+                </div>
+                <div class="tooltip">
+                    <div class="btn">Left Tooltip</div>
+                    <span class="tooltiptext left">Tooltip text</span>
                 </div>
 
-                <pre class="code" data-lang="HTML"><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>top tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn tooltip tooltip-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Lorem ipsum dolor sit amet"</span>&gt;</span>right tooltip<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+<pre>
+
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Right Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext right"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Top Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext top"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Bottom Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext bottm"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="btn"&gt;Left Tooltip&lt;/div&gt;
+        &lt;span class="tooltiptext left"&gt;Tooltip text&lt;/span&gt;
+    &lt;/div&gt;
+			</pre>
 
                 <div class="text-center pt-2 my-2">
                     <h3>Typography</h3>
@@ -2108,6 +2156,89 @@
 
                 </div>
 
+                <div class="text-center pt-2 my-2">
+                    <h3>Button group</h3>
+                </div>
+                <div class="button-group fixed radius">
+                    <a class="button">Button</a>
+                    <a class="button">Button</a>
+                    <a class="button">Button</a>
+                </div>
+
+<pre>
+
+    &lt;div class="button-group fixed radius"&gt;
+        &lt;a class="button"&gt;Button&lt;/a&gt;
+        &lt;a class="button"&gt;Button&lt;/a&gt;
+        &lt;a class="button"&gt;Button&lt;/a&gt;
+    &lt;/div&gt;
+    
+</pre>
+
+                <div class="text-center pt-2 my-2">
+                    <h3>Dropdown Menu</h3>
+                </div>
+
+                <div class="dropdown">
+                    <nav class="quaternary">
+                        <ul>
+                        <li class="dropdown-menu" tab-index="0">
+                            <a href="#">Menu Item 1</a>
+                            <ul class="dropdown-content">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-menu" tab-index="0">
+                            <a href="#">Menu Item 2</a>
+                            <ul class="dropdown-content">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-menu" tab-index="0">
+                            <a href="#">Menu Item 3</a>
+                            <ul class="dropdown-content">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+<pre>
+
+    &lt;div class="dropdown"&gt;
+        &lt;nav class="quaternary"&gt;
+            &lt;ul&gt;
+            &lt;li class="dropdown-menu" tab-index="0"&gt;
+                &lt;a href="#"&gt;Menu Item 1&lt;/a&gt;
+                &lt;ul class="dropdown-content"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown-menu" tab-index="0"&gt;
+                &lt;a href="#"&gt;Menu Item 2&lt;/a&gt;
+                &lt;ul class="dropdown-content"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown-menu" tab-index="0"&gt;
+                &lt;a href="#"&gt;Menu Item 3&lt;/a&gt;
+                &lt;ul class="dropdown-content"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Sub Item 2&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;
+    
+</pre>
+
+                
                 <script src="app.js"></script>
 </body>
 
