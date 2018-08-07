@@ -1,26 +1,13 @@
-.btn,
-button,
-dd,
-dt,
-li {
-    margin-bottom: 1.0rem;
-}
-
-fieldset,
-input,
-select,
-textarea {
-    margin-bottom: 1.5rem;
-}
-
-blockquote,
-dl,
-figure,
-form,
-ol,
-p,
-pre,
-table,
-ul {
-    margin-bottom: 2.5rem;
+// Spacing
+$spaceamounts: ( 10, 20, 30, 40, 50);
+$sides: ( top, bottom, left, right);
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
 }
