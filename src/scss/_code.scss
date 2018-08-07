@@ -1,5 +1,5 @@
 code {
-    background: $primary-dark;
+    background: $gray-light;
     border-radius: .4rem;
     font-size: 86%;
     margin: 0 .2rem;
@@ -8,8 +8,8 @@ code {
 }
 
 pre {
-    background: $primary-dark;
-    border-left: .3rem solid $primary;
+    background: $gray-light;
+    border-left: .3rem solid white;
     overflow-y: hidden;
     &>code {
         border-radius: 0;
