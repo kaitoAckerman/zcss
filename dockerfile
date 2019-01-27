@@ -1,9 +1,9 @@
-FROM node:8-alpine
+FROM node:11.8.0-alpine
 
 WORKDIR /code
-EXPOSE 8000
 
 CMD ["npm", "run", "live"]
 COPY package.json /code
-RUN npm update && npm install
+
+RUN npm install
 COPY . /code
