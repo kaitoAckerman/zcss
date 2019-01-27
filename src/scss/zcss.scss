@@ -1,17 +1,41 @@
-@import 'variables';
-@import 'base';
-@import 'blockquote';
-@import 'button';
-@import 'code';
-@import 'divider';
-@import 'form';
-@import 'grid';
-@import 'link';
-@import 'list';
-@import 'spacing';
-@import 'table';
-@import 'typography';
-@import 'image';
-@import 'navbar';
-@import 'dropdown';
-@import 'utility';
+// This is a clone CSS framework from http://bemskel.com/ that include SASS and BEM naming convention.
+
+@charset 'UTF-8';
+
+// 1. Vendors
+@import
+  'vendors/normalize';
+
+// 2. Abstracts - Variables, functions, mixins, and placeholders
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/placeholders';
+
+
+// 3. Base files
+@import
+  'base/base',
+  'base/helpers',
+  'base/typography',
+  'base/spacing',
+  'base/print';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/forms',
+  'layout/grid',
+  'layout/grid-flex';
+
+// 5. Components
+@import
+  'components/buttons',
+  'components/lists',
+  'components/pagination',
+  'components/tables',
+  'components/media-queries',
+  'components/navbar', //no content, just documentation
+  'components/dropdown';

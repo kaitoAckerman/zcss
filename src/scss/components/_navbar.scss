@@ -1,0 +1,41 @@
+.navbar {
+    height: 64px;
+    padding: 0.625rem 0rem;
+    display: flex;
+
+    .container {
+        display: flex;
+
+        .navbar__logo {
+            display: flex;
+            align-items: center;
+            margin: 5px 0px;
+        }
+
+        .navbar__menu {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            .navbar__item {
+                margin: 10px 15px;
+                display: flex;
+                align-items: center;
+
+                &:last-child{
+                    margin: 10px 0px 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+.menu--left {
+    margin-left: auto !important;
+}
+
+.navbar--primary{
+    background-color: $color-primary;
+    color: white;
+}

@@ -3,731 +3,574 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-    <meta name="msapplication-TileColor" content="#f4f5f6">
-    <meta name="msapplication-TileImage" content="images/mstile-150x150.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#f4f5f6">
-    <meta name="apple-mobile-web-app-title" content="Milligram - A minimalist CSS framework.">
-    <meta name="application-name" content="Milligram - A minimalist CSS framework.">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#f4f5f6">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="CJ Patoilo">
-    <meta name="description" content="Milligram - A minimalist CSS framework.">
-    <meta property="og:description" content="Milligram - A minimalist CSS framework.">
-    <meta property="og:image" content="images/thumbnail.png">
-    <meta property="og:locale" content="en">
-    <meta property="og:site_name" content="Milligram - A minimalist CSS framework.">
-    <meta property="og:title" content="Milligram - A minimalist CSS framework.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="/">
-    <meta property="article:published_time" content="2017-10-27T13:27:58.607Z">
-    <meta property="article:author" content="CJ Patoilo">
-    <meta property="article:section" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="Milligram - A minimalist CSS framework.">
-    <meta name="twitter:url" content="/">
-    <meta name="twitter:site" content="/">
-    <meta name="twitter:creator" content="CJ Patoilo">
-    <meta name="twitter:title" content="Milligram - A minimalist CSS framework.">
-    <meta name="twitter:description" content="Milligram - A minimalist CSS framework.">
-    <meta name="twitter:image:src" content="images/thumbnail.png">
-    <base src="https://milligram.io">
-    <title>Milligram - A minimalist CSS framework.</title>
-    <link rel="canonical" href="/">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
-    <link rel="image_src" href="images/thumbnail.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zcss</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <link rel="stylesheet" href="zcss.css">
-    <link rel="stylesheet" href="main.css">
+
+    <!-- HTML metadata -->
+    <link rel="shortcut icon" href="{{ asset('imgs/favicon.ico') }}" type="image/x-icon">
+    <meta name="description" content="@yield('desc','Keep updated with ALL mosque events nearby you!')">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <!-- Open Graph meta data -->
+    <meta property="og:title" content="@yield('title')" />
+    <meta property="og:description" content="@yield('desc','Keep updated with ALL mosque events nearby you!')" />
+    <meta property="og:url" content="@yield('url', 'https://www.zammani.com/')" />
+    <meta property="og:image" itemprop="image" content="@yield('img', asset('imgs/logo.png') )" />
+
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:type" content="website" />
 </head>
 
 <body>
-    <main class="wrapper">
-        <nav class="navigation">
-            <section class="container">
-                <a class="navigation-title" href="#">
-                    <h1 class="title">Zcss</h1>
-                </a>
-                <ul class="navigation-list float-right">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#popover-grid" data-popover>Docs</a>
-                        <div class="popover" id="popover-grid">
-                            <ul class="popover-list">
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#getting-started" title="Getting Started">Getting Started</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#typography" title="Typography">Typography</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#blockquotes" title="Blockquotes">Blockquotes</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#buttons" title="Buttons">Buttons</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#lists" title="Lists">Lists</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#forms" title="Forms">Forms</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#tables" title="Tables">Tables</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#grids" title="Grids">Grids</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#codes" title="Codes">Codes</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#utilities" title="Utilities">Utilities</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#tips" title="Tips">Tips</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#browser-support" title="Browser Support">Browser Support</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#examples" title="Examples">Examples</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" href="#contributing" title="Contributing">Contributing</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#popover-support" data-popover>Support</a>
-                        <div class="popover" id="popover-support">
-                            <ul class="popover-list">
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://github.com/milligram/milligram" title="On Github">On Github</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://codepen.io/milligramcss" title="On Codepen">On Codepen</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://facebook.com/milligramcss" title="On Facebook">On Facebook</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://twitter.com/milligramcss" title="On Twitter">On Twitter</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://github.com/milligram/milligram/issues/new" title="Need help?">Need help?</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://github.com/milligram/milligram#license" title="License">License</a>
-                                </li>
-                                <li class="popover-item">
-                                    <a class="popover-link" target="blank" href="https://github.com/milligram/milligram/releases" title="Versions">Versions</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </nav>
-        <header class="header" id="home">
-            <section class="container">
-                <h1 class="title">Zcss</h1>
-                <p class="description">Css Framework forked from Milligram.io</p>
-                <a class="btn" href="#getting-started" title="Getting Started">Getting Started</a>
-            </section>
-        </header>
-        <section class="container" id="typography">
-            <h3 class="title">Typography</h3>
-            <p class="description">CSS3 introduces a few new units, including the
-                <code>rem</code> unit, which stands for
-                <em>"root em"</em>. The
-                <code>rem</code> unit is relative to the font-size of the root element
-                <code>html</code> . That means that we can define a single font size on the root element, and define all
-                <code>rem</code> units to be a percentage of that. The typography has
-                <code>font-size</code> defined in 1.6rem (16px) and
-                <code>line-height</code> in 1.6 (24px).
-                <strong>Milligram</strong> uses the
-                <code>font-family</code>
-                <a href="https://www.google.com/fonts/specimen/Roboto" title="Roboto by Christian Robertson" target="_blank" rel="noopener">
-                    Roboto</a>, created by
-                <u>Christian Robertson</u>, and provided by Google.</p>
-            <div class="example">
-                <div class="row">
-                    <div class="col">
-                        <h1>Heading
-                            <span class="heading-font-size">
-                                <code>h1</code> 4.6rem (46px)</span>
-                        </h1>
-                        <h2>Heading
-                            <span class="heading-font-size">
-                                <code>h2</code> 3.6rem (36px)</span>
-                        </h2>
-                        <h3>Heading
-                            <span class="heading-font-size">
-                                <code>h3</code> 2.8rem (28px)</span>
-                        </h3>
-                        <h4>Heading
-                            <span class="heading-font-size">
-                                <code>h4</code> 2.2rem (22px)</span>
-                        </h4>
-                        <h5>Heading
-                            <span class="heading-font-size">
-                                <code>h5</code> 1.8rem (18px)</span>
-                        </h5>
-                        <h6>Heading
-                            <span class="heading-font-size">
-                                <code>h6</code> 1.6rem (16px)</span>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <pre class="code prettyprint"><code class="code-content">
-    <p>The base type is 1.6rem (16px) over 1.6 line height (24px)</p>
-    
-    
-    <a>Anchor</a>
-    <em>Emphasis</em>
-    <small>Small</small>
-    <strong>Strong</strong>
-    <u>Underline</u>
-    
-    
-    <h1>Heading</h1>
-    <h2>Heading</h2>
-    <h3>Heading</h3>
-    <h4>Heading</h4>
-    <h5>Heading</h5>
-    <h6>Heading</h6>
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>typography</strong>
-                <a href="typography.html" title="Examples about typography">here</a>.</p>
-        </section>
-        <section class="container" id="blockquotes">
-            <h3 class="title">Blockquotes</h3>
-            <p class="description">The Blockquote represents a section that is quoted from another source.</p>
-            <div class="example">
-                <blockquote>
-                    <p>
-                        <em>Yeah!! Milligram is amazing.</em>
-                    </p>
-                </blockquote>
-            </div>
-            <pre class="code prettyprint"><code class="code-content"><blockquote>
-      <p><em>Yeah!! Milligram is amazing.</em></p>
-    </blockquote></code></pre>
-            <p>See more examples of
-                <strong>blockquotes</strong>
-                <a href="blockquotes.html" title="Examples about blockquotes">here</a>.</p>
-        </section>
-        <section class="container" id="buttons">
-            <h3 class="title">Buttons</h3>
-            <p class="description">The Button, an essential part of any user experience. Buttons come in three basic styles in Milligram: The
-                <code>button</code> element has flat color by default, whereas
-                <code>.btn-outline</code> has a simple outline around, and
-                <code>.btn-clear</code> is entirely clear.</p>
-            <div class="example">
-                <a class="btn" href="javascript: void(0)">Default Button</a>
-                <button class="btn btn-outline">Outlined Button</button>
-                <input class="btn btn-clear" type="submit" value="Clear Button">
-            </div>
-            <pre class="code prettyprint"><code class="code-content">
-    <a class="btn" href="#">Default Button</a>
-    
-    
-    <button class="btn btn-outline">Outlined Button</button>
-    
-    
-    <input class="btn btn-clear" type="submit" value="Clear Button">
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>buttons</strong>
-                <a href="buttons.html" title="Examples about buttons">here</a>.</p>
-        </section>
-        <section class="container" id="lists">
-            <h3 class="title">Lists</h3>
-            <p class="description">The List is a very versatile and common way to display items. Milligram has three types of lists: The unordered
-                list use
-                <code>ul</code> element will be marked with a outline circles, the ordered list use
-                <code>ol</code> element and your items will be marked with numbers, the description list use
-                <code>dl</code> element and your items will not be marking, only spacings.</p>
-            <div class="row example">
-                <div class="col">
-                    <ul>
-                        <li>Unordered list item 1</li>
-                        <li>Unordered list item 2</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ol>
-                        <li>Ordered list item 1</li>
-                        <li>Ordered list item 2</li>
-                    </ol>
-                </div>
-                <div class="col">
-                    <dl>
-                        <dt>Description list item 1</dt>
-                        <dd>Description list item 1.1</dd>
-                    </dl>
-                </div>
-            </div>
-            <pre class="code prettyprint"><code class="code-content">
-    <ul>
-      <li>Unordered list item 1</li>
-      <li>Unordered list item 2</li>
-    </ul>
-    
-    
-    <ol>
-      <li>Ordered list item 1</li>
-      <li>Ordered list item 2</li>
-    </ol>
-    
-    
-    <dl>
-      <dt>Description list item 1</dt>
-      <dd>Description list item 1.1</dd>
-    </dl>
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>lists</strong>
-                <a href="lists.html" title="Examples about lists">here</a>.</p>
-        </section>
-        <section class="container" id="forms">
-            <h3 class="title">Forms</h3>
-            <p class="description">The Form has never been exactly fun, and it can be downright painful on a mobile device with its on-screen keyboard.
-                Milligram help to make this much easier with design focused on the user experience.</p>
-            <div class="example">
-                <form action="javascript: void(0)">
-                    <fieldset>
-                        <label for="nameField">Name</label>
-                        <input id="nameField" type="text" placeholder="CJ Patoilo">
-                        <label for="ageRangeField">Age Range</label>
-                        <select id="ageRangeField">
-                            <option value="0-13">0-13</option>
-                            <option value="14-17">14-17</option>
-                            <option value="18-23">18-23</option>
-                            <option value="24+">24+</option>
-                        </select>
-                        <label for="commentField">Comment</label>
-                        <textarea id="commentField" placeholder="Hi CJ …"></textarea>
-                        <div class="float-right">
-                            <input id="confirmField" type="checkbox">
-                            <label class="label-inline" for="confirmField">Send a copy to yourself</label>
-                        </div>
-                        <input class="btn-primary" type="submit" value="Send">
-                    </fieldset>
-                </form>
-            </div>
-            <pre class="code prettyprint"><code class="code-content"><form>
-      <fieldset>
-        <label for="nameField">Name</label>
-        <input type="text" placeholder="CJ Patoilo" id="nameField">
-        <label for="ageRangeField">Age Range</label>
-        <select id="ageRangeField">
-          <option value="0-13">0-13</option>
-          <option value="14-17">14-17</option>
-          <option value="18-23">18-23</option>
-          <option value="24+">24+</option>
-        </select>
-        <label for="commentField">Comment</label>
-        <textarea placeholder="Hi CJ …" id="commentField"></textarea>
-        <div class="float-right">
-          <input type="checkbox" id="confirmField">
-          <label class="label-inline" for="confirmField">Send a copy to yourself</label>
-        </div>
-        <input class="btn-primary" type="submit" value="Send">
-      </fieldset>
-    </form>
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>forms</strong>
-                <a href="forms.html" title="Examples about forms">here</a>.</p>
-        </section>
-        <section class="container" id="tables">
-            <h3 class="title">Tables</h3>
-            <p class="description">The Table element represents data in two dimensions or more. We encourage the use of proper formatting with
-                <code>thead</code> and
-                <code>tbody</code> to create a
-                <code>table</code>. The code becomes cleaner without disturbing understanding.</p>
-            <div class="example">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Height</th>
-                            <th>Location</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Stephen Curry</td>
-                            <td>27</td>
-                            <td>1,91</td>
-                            <td>Akron, OH</td>
-                        </tr>
-                        <tr>
-                            <td>Klay Thompson</td>
-                            <td>25</td>
-                            <td>2,01</td>
-                            <td>Los Angeles, CA</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <pre class="code prettyprint"><code class="code-content"><table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Height</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Stephen Curry</td>
-          <td>27</td>
-          <td>1,91</td>
-          <td>Akron, OH</td>
-        </tr>
-        <tr>
-          <td>Klay Thompson</td>
-          <td>25</td>
-          <td>2,01</td>
-          <td>Los Angeles, CA</td>
-        </tr>
-      </tbody>
-    </table>
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>tables</strong>
-                <a href="tables.html" title="Examples about tables">here</a>.</p>
-        </section>
-        <section class="container" id="grids">
-            <h3 class="title">Grids</h3>
-            <p class="description">The Grid is a fluid system with a max width of
-                <code>112.0rem</code>
-                <small>(1120px)</small>, that shrinks with the browser/device at smaller sizes. The max width can be changed with
-                one line of CSS and all cols will resize accordingly. Milligram is different than most because of its
-                use of the
-                <strong>CSS Flexible Box Layout Module standard</strong>. The advantage is the simplicity, and we know that a functional
-                code is very important for maintainability and scalability. Simply add cols you want in a row, and they'll
-                evenly take up the available space. If you want three cols, add three cols, if you want five cols,
-                add five cols. There is no restriction on number of cols, but we advise you to follow a design pattern
-                of grid system. See more tips on best practices in the
-                <a href="#tips" title="Tips"> tips</a>.</p>
-            <div class="example">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <span class="col-demo">.col</span>
-                        </div>
-                        <div class="col">
-                            <span class="col-demo">.col</span>
-                        </div>
-                        <div class="col">
-                            <span class="col-demo">.col</span>
-                        </div>
-                        <div class="col">
-                            <span class="col-demo">.col</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span class="col-demo">.col</span>
-                        </div>
-                        <div class="col col-50 col-offset-25">
-                            <span class="col-demo">.col-50.col-offset-25</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <pre class="code prettyprint"><code class="code-content">
-    <div class="container">
-    
-      <div class="row">
-        <div class="col">.col</div>
-        <div class="col">.col</div>
-        <div class="col">.col</div>
-        <div class="col">.col</div>
-      </div>
-    
-      <div class="row">
-        <div class="col">.col</div>
-        <div class="col col-50 col-offset-25">.col col-50 col-offset-25</div>
-      </div>
-    
-    </div>
-    
-    </code></pre>
-            <p>See more examples of
-                <strong>grids</strong>
-                <a href="grids.html" title="Examples about grids">here</a>.</p>
-        </section>
-        <section class="container" id="codes">
-            <h3 class="title">Codes</h3>
-            <p class="description">The Code element represents a fragment of computer code. Just wrap anything in a
-                <code>code</code> and it will appear like this. if you need a block, by default, enter the
-                <code>code</code> within the
-                <code>pre</code>element.</p>
-            <div class="example">
-                <pre><code>.milligram {
-      color: #9b4dca;
-    }</code></pre>
-            </div>
-            <pre class="code prettyprint"><code class="code-content"><pre><code>
-    .milligram {
-      color: #9b4dca;
-    }
-    </code></pre>
-            </code>
-            </pre>
-            <p>See more
-                <strong>code</strong> examples
-                <a href="codes.html" title="Examples about codes">here</a>.</p>
-        </section>
-        <section class="container" id="utilities">
-            <h3 class="title">Utilities</h3>
-            <p class="description">Milligram has some functional classes to improve the performance and productivity everyday.</p>
-            <pre class="code prettyprint"><code class="code-content">
-    
-    
-    <div class="clearfix">
-    
-      
-      <div class="float-left"></div>
-      <div class="float-right"></div>
-    
-    </div></code></pre>
-            <p>See more examples of
-                <strong>utilities</strong>
-                <a href="utilities.html" title="Examples about utilities">here</a>.</p>
-        </section>
-        <section class="container" id="tips">
-            <h3 class="title">Tips</h3>
-            <p class="description">Tips, techniques, and best practice on using Cascading Style Sheets.</p>
-            <p>
-                <strong>Mobile First</strong>
-            </p>
-            <p>The Mobile First is the design strategy that takes priority development for mobile devices like smartphones and
-                tablets. It means all styles outside of a media queries apply to all devices, then larger screens are targeted
-                for enhancement. This prevents small devices from having to parse tons of unused CSS. Milligram use some
-                breakpoints like these:</p>
-            <div class="example">
-                <div class="row">
-                    <ul>
-                        <li>Larger than
-                            <strong>Mobile</strong> screen: 40.0rem
-                            <span class="heading-font-size">(640px)</span>
-                        </li>
-                        <li>Larger than
-                            <strong>Tablet</strong> screen: 80.0rem
-                            <span class="heading-font-size">(1280px)</span>
-                        </li>
-                        <li>Larger than
-                            <strong>Desktop</strong> screen: 120.0rem
-                            <span class="heading-font-size">(1920px)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <pre class="code prettyprint"><code class="code-content">/* Mobile First Media Queries */
-    
-    /* Base style */
-    { ... }
-    
-    /* Larger than mobile screen */
-    @media (min-width: 40.0rem) { ... }
-    
-    /* Larger than tablet screen */
-    @media (min-width: 80.0rem) { ... }
-    
-    /* Larger than desktop screen */
-    @media (min-width: 120.0rem) { ... }</code></pre>
-            <p>
-                <strong>Embed Font</strong>
-            </p>
-            <p>
-                <strong>Milligram</strong> uses the
-                <code>font-family</code>
-                <a href="https://www.google.com/fonts/specimen/Roboto" title="Roboto by Christian Robertson" target="_blank" rel="noopener">
-                    Roboto</a>, created by
-                <u>Christian Robertson</u>, and provided by Google. Customize your projects using
-                <a href="https://fonts.google.com">Google Fonts</a>. To embed your selected fonts into a webpage, copy this code into the
-
-                <head> of your HTML document.</p>
-            <pre class="code prettyprint"><code class="code-content">/* Embed Font */
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
-    
-    /* Use the following CSS rules to specify these families */
-    body {
-      font-family: 'Roboto Slab', serif;
-    }</code></pre>
-            <p>
-                <strong>Extending The Inheritances</strong>
-            </p>
-            <p>The style of an element can be defined in several different locations, which interact in a complex way. It is
-                this form of interaction makes CSS powerful, but it can make it confusing and difficult to debug.</p>
-            <div class="example">
-                <div class="row">
-                    <div class="col">
-                        <a class="btn" href="javascript: void(0)">Default .button</a>
-                        <a class="btn btn-outline" href="javascript: void(0)">Outlined .button</a>
-                        <a class="btn btn-clear" href="javascript: void(0)">Clear .button</a>
-                    </div>
-                    <div class="col">
-                        <a class="btn button-black" href="javascript: void(0)">.button-black</a>
-                        <a class="btn button-black btn-outline" href="javascript: void(0)">.button-black</a>
-                        <a class="btn button-black btn-clear" href="javascript: void(0)">.button-black</a>
-                    </div>
-                    <div class="col col-20">
-                        <a class="btn button-small" href="javascript: void(0)">.button-small</a>
-                        <a class="btn button-small btn-outline" href="javascript: void(0)">.button-small</a>
-                        <a class="btn button-small btn-clear" href="javascript: void(0)">.button-small</a>
-                    </div>
-                    <div class="col">
-                        <a class="btn button-large" href="javascript: void(0)">.button-large</a>
-                        <a class="btn button-large btn-outline" href="javascript: void(0)">.button-large</a>
-                        <a class="btn button-large btn-clear" href="javascript: void(0)">.button-large</a>
-                    </div>
-                </div>
-            </div>
-            <pre class="code prettyprint"><code class="code-content">/* Extending The Inheritances */
-    
-    /* Custom color */
-    .button-black {
-      background-color: black;
-      border-color: black;
-    }
-    .button-black.btn-clear,
-    .button-black.btn-outline {
-      background-color: transparent;
-      color: black;
-    }
-    .button-black.btn-clear {
-      border-color: transparent;
-    }
-    
-    /* Custom size */
-    .button-small {
-      font-size: .8rem;
-      height: 2.8rem;
-      line-height: 2.8rem;
-      padding: 0 1.5rem;
-    }
-    
-    .button-large {
-      font-size: 1.4rem;
-      height: 4.5rem;
-      line-height: 4.5rem;
-      padding: 0 2rem;
-    }</code></pre>
-            <p>See more examples of
-                <strong>tips</strong>
-                <a href="tips.html" title="Examples about tips">here</a>.</p>
-        </section>
-        <section class="container" id="browser-support">
-            <h3 class="title">Browser Support</h3>
-            <p class="description">While not designed for old browsers, Milligram has support for some old versions, but we recommend using the
-                latest versions of their browsers.</p>
-            <div class="example">
-                <ul>
-                    <li>Brave
-                        <small>latest</small>
-                    </li>
-                    <li>Chrome
-                        <small>latest</small>
-                    </li>
-                    <li>Edge
-                        <small>latest</small>
-                    </li>
-                    <li>Firefox
-                        <small>latest</small>
-                    </li>
-                    <li>IE
-                        <small>latest</small>
-                    </li>
-                    <li>Opera
-                        <small>latest</small>
-                    </li>
-                    <li>Safari
-                        <small>latest</small>
-                    </li>
-                </ul>
-            </div>
-            <p>See more examples of
-                <strong>browser support</strong>
-                <a href="browser-support.html" title="Examples about browser support">here</a>.</p>
-        </section>
-        <section class="container" id="examples">
-            <h3 class="title">Examples</h3>
-            <p>You can view more examples of using Milligram.</p>
-            <ul>
-                <li>
-                    <a href="getting-started.html" title="Getting Started">Getting Started</a>
-                </li>
-                <li>
-                    <a href="typography.html" title="Typography">Typography</a>
-                </li>
-                <li>
-                    <a href="blockquotes.html" title="Blockquotes">Blockquotes</a>
-                </li>
-                <li>
-                    <a href="buttons.html" title="Buttons">Buttons</a>
-                </li>
-                <li>
-                    <a href="lists.html" title="Lists">Lists</a>
-                </li>
-                <li>
-                    <a href="forms.html" title="Forms">Forms</a>
-                </li>
-                <li>
-                    <a href="tables.html" title="Tables">Tables</a>
-                </li>
-                <li>
-                    <a href="grids.html" title="Grids">Grids</a>
-                </li>
-                <li>
-                    <a href="codes.html" title="Codes">Codes</a>
-                </li>
-                <li>
-                    <a href="utilities.html" title="Utilities">Utilities</a>
-                </li>
-                <li>
-                    <a href="tips.html" title="Tips">Tips</a>
-                </li>
-                <li>
-                    <a href="browser-support.html" title="Browser Support">Browser Support</a>
+    <!-- navbar -->
+    <div class="navbar navbar--primary">
+        <div class="container">
+            <div class="navbar__logo"><a href="#">Logo</a></div>
+            <ul class="navbar__menu menu--left">
+                <li class="navbar__item"><a href="#">Test 1</a></li>
+                <li class="navbar__item"><a href="#">Test 2</a></li>
+                <li class="navbar__item">
+                    <button class="btn btn--success">Secondary</button>
                 </li>
             </ul>
-        </section>
-        <section class="container" id="contributing">
-            <h3 class="title">Contributing</h3>
-            <p>Want to contribute? Follow these
-                <a href="https://github.com/milligram/milligram/blob/master/.github/contributing.md" title="Contributing"> recommendations</a>.</p>
-        </section>
-        <footer class="footer">
-            <section class="container">
-                <p>Designed with ♥ by
-                    <a href="http://cjpatoilo.com" title="CJ Patoilo" target="_blank"> CJ Patoilo</a>. Licensed under the
-                    <a href="https://github.com/milligram/milligram#license" title="MIT License" target="_blank"> MIT License</a>.</p>
-            </section>
-        </footer>
-    </main>
-    <script async defer src="app.js"></script>
+        </div>
+    </div>
+
+    <!-- Main Content  -->
+    <div class="container">
+
+        <!-- GRID -->
+        <div class="docs-section" id="grid">
+            <!-- Grid -->
+            <h2 class="docs-section__header">Grid</h2>
+            <p>The grid is a <u>12-column fluid grid with a maximum width of 1000px</u>, that shrinks with the browser
+                device at smaller sizes. The maximum width can be changed with one line of CSS in the <code>_variables.scss</code>
+                file and all columns will resize accordingly. The syntax is simple and it makes coding responsive much
+                easier. Use the grid layout if you need support for older browsers such as IE9 and below</p>
+
+            <div class="demo-grid docs-sample">
+                <div class="row">
+                    <div class="col col--2">col--2</div>
+                    <div class="col col--10">col--10</div>
+                </div>
+                <div class="row">
+                    <div class="col col--3">col--3</div>
+                    <div class="col col--9">col--9</div>
+                </div>
+                <div>
+                    <div class="col col--4">col--4</div>
+                    <div class="col col--8">col--8</div>
+                </div>
+                <div class="row">
+                    <div class="col col--5">col--5</div>
+                    <div class="col col--7">col--7</div>
+                </div>
+                <div class="row">
+                    <div class="col col--6">col--6</div>
+                    <div class="col col--6">col--6</div>
+                </div>
+                <div class="row">
+                    <div class="col col--7">col--7</div>
+                    <div class="col col--5">col--5</div>
+                </div>
+                <div class="row">
+                    <div class="col col--8">col--8</div>
+                    <div class="col col--4">col--4</div>
+                </div>
+                <div class="row">
+                    <div class="col col--9">col--9</div>
+                    <div class="col col--3">col--3</div>
+                </div>
+                <div class="row">
+                    <div class="col col--10">col--10</div>
+                    <div class="col col--2">col--2</div>
+                </div>
+                <div class="row">
+                    <div class="col col--11">col--11</div>
+                    <div class="col col--1">col--1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="docs-section" id="grid-flex">
+            <h2 class="docs-section__header">Flexbox Grid</h2>
+            <p>Use flexbox grid if you only want to support modern browsers. In this kind of layout, the width of the
+                columns are implicit, so columns will adjust automatically to be equal width to their adjacent columns.</p>
+            <div class="demo-grid">
+                <div class="flex-grid">
+                    <div class="flex-grid__col">Auto</div>
+                    <div class="flex-grid__col">Auto</div>
+                    <div class="flex-grid__col">Auto</div>
+                    <div class="flex-grid__col">Auto</div>
+                </div>
+                <div class="flex-grid flex-grid--md">
+                    <div class="flex-grid__col flex-grid__col--sm">flex-grow: 2</div>
+                    <div class="flex-grid__col">flex-grow: 4</div>
+                </div>
+                <div class="flex-grid flex-grid--md">
+                    <div class="flex-grid__col flex-grid__col--fixed-width">fixed-width: 200px</div>
+                    <div class="flex-grid__col">flex-grow: 4</div>
+                </div>
+                <div class="flex-grid flex-grid--lg">
+                    <div class="flex-grid__col flex-grid__col--lg">flex-grow: large</div>
+                    <div class="flex-grid__col">flex-grow: default</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Typography -->
+        <div class="docs-section" id="typography">
+            <h2 class="docs-section__header">Typography</h2>
+            <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively
+                sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, BEMSkel never
+                changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project.
+                All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size
+                just means <code>50px</code>.</p>
+            <div class="docs-sample">
+                <div class="row">
+                    <div class="col col--6">
+                        <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a>
+                            served by Google, set at 1.6rem (16px) over a 2.4rem line height (24px). Other type basics
+                            like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u>
+                            are all obviously included.</p>
+                        <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>,
+                            <code>line-height</code>, and <code>margins</code>.</p>
+                    </div>
+                    <div class="col col--6">
+                        <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+                        <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+                        <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+                        <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+                        <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+                        <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- Buttons -->
+        <div class="docs-section" id="buttons">
+            <h2 class="docs-section__header">Buttons</h2>
+            <p>Different button styles are included in BEMSKEL -- classic, outline, raised, and large. Classic button
+                styles are patterned after <a href="http://getbootstrap.com">Bootstrap</a>, which has 5 different color
+                styles -- primary, secondary, info, warning, and danger. Button styles are also applied to a number of
+                appropriate form elements but can also be applied to anchors with a <code>.btn</code> class.</p>
+            <div class="docs-sample">
+                <h5>Button Text</h5>
+                <div>
+                    <button class="btn-text--primary" type="button">Primary</button>
+                    <button class="btn-text--success" type="button">Success</button>
+                    <button class="btn-text--warning" type="button">Warning</button>
+                    <button class="btn-text--danger" type="button">Danger</button>
+                </div><br>
+                <h5>Outline Buttons</h5>
+                <div>
+                    <button class="btn btn-outline--primary" type="button"> Primary</button>
+                    <button class="btn btn-outline--success" type="button">Success</button>
+                    <button class="btn btn-outline--warning" type="button">Warning</button>
+                    <button class="btn btn-outline--danger" type="button">Danger</button>
+                </div><br>
+                <h5>Float Styles</h5>
+                <div>
+                    <button class="btn btn--primary" type="button"> Primary</button>
+                    <button class="btn btn--success" type="button">Success</button>
+                    <button class="btn btn--warning" type="button">Warning</button>
+                    <button class="btn btn--danger" type="button">Danger</button>
+                    <br><br>
+                    <button class="btn btn--block" type="button">Block Button</button>
+                </div><br>
+                <h5>Buttons with Icons</h5>
+                <p>BEMSkel does not include an icon font, but works nicely with popular ones such as <a href="http://fontawesome.io/icons/">FontAwesome</a>.
+                    You can use the <code>&lti&gt</code> element to attach icons inside buttons.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- Forms -->
+        <div class="docs-section" id="forms">
+            <h2 class="docs-section__header">Forms</h2>
+            <p>Basic form styles are included to help building forms easier.</p>
+            <div class="docs-sample">
+                <form>
+                    <div class="row">
+                        <div class="col col--6">
+                            <label for="exampleEmailInput">Your email</label>
+                            <input class="u-full-width" type="email" placeholder="test@mydomain.com" id="exampleEmailInput">
+                        </div>
+                        <div class="col col--6">
+                            <label for="exampleRecipientInput">Reason for Contacting</label>
+                            <select class="u-full-width" id="exampleRecipientInput">
+                                <option value="Option 1">Inquiry</option>
+                                <option value="Option 2">Thanks</option>
+                                <option value="Option 3">Issues</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="radio">
+                        <input type="radio" name="example">
+                        <span class="radio__label label-body">Option 1</span>
+                        <input type="radio" name="example">
+                        <span class="radio__label label-body">Option 2</span>
+                    </label>
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi Karlo &hellip;" id="exampleMessage"></textarea>
+                    <label class="sample__send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="btn btn--primary" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- Lists -->
+        <div class="docs-section" id="lists">
+            <h2 class="docs-section__header">Lists</h2>
+            <div class="row docs-sample">
+                <div class="col col--6">
+                    <ul>
+                        <li>Unordered lists have basic styles</li>
+                        <li>
+                            They use the circle list style
+                            <ul>
+                                <li>Nested lists styled to feel right</li>
+                                <li>Can nest either type of list into the other</li>
+                            </ul>
+                        </li>
+                        <li>Just more list items</li>
+                    </ul>
+                </div>
+                <div class="col col--6">
+                    <ol>
+                        <li>Ordered lists also have basic styles</li>
+                        <li>
+                            They use the decimal list style
+                            <ul>
+                                <li>Ordered and unordered can be nested</li>
+                                <li>Can nest either type of list into the other</li>
+                            </ul>
+                        </li>
+                        <li>Last list item just for the fun</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <!-- Tables -->
+        <div class="docs-section" id="tables">
+            <div class="container--md">
+                <h2 class="docs-section__header">Tables</h2>
+                <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code>
+                    when building a <code>table</code>.</p>
+                <div class="docs-sample">
+                    <div class="row">
+                        <div class="col col--6">
+                            <h6>Default</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lemmy</td>
+                                        <td>Kilmister</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jeff </td>
+                                        <td>Hanneman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Jimi</td>
+                                        <td>Hendrix</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col col--6">
+                            <h6>Bordered</h6>
+                            <table class="table table--bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lemmy</td>
+                                        <td>Kilmister</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jeff </td>
+                                        <td>Hanneman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Jimi</td>
+                                        <td>Hendrix</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col--6">
+                            <h6>Striped</h6>
+                            <table class="table table--striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lemmy</td>
+                                        <td>Kilmister</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jeff </td>
+                                        <td>Hanneman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Jimi</td>
+                                        <td>Hendrix</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col col--6">
+                            <h6>Hover</h6>
+                            <table class="table table--hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lemmy</td>
+                                        <td>Kilmister</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jeff </td>
+                                        <td>Hanneman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Jimi</td>
+                                        <td>Hendrix</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col--6">
+                            <h6>Compact</h6>
+                            <table class="table table--compact">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Lemmy</td>
+                                        <td>Kilmister</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Jeff </td>
+                                        <td>Hanneman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Jimi</td>
+                                        <td>Hendrix</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col col--6">
+                            <h6>Responsive (scrolls horizonatally on smaller screens)</h6>
+                            <!-- Responsive tables  (must be wrapped by .table-responsive class) -->
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Band</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Lemmy</td>
+                                            <td>Kilmister</td>
+                                            <td>Motorhead</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Jeff </td>
+                                            <td>Hanneman</td>
+                                            <td>Slayer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Jim</td>
+                                            <td>Morrison</td>
+                                            <td>The Doors</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+        <!-- Pagination -->
+        <div class="docs-section" id="pagination">
+            <h2 class="docs-section__header">Pagination</h2>
+            <p>The <a href="#">pagination</a> component provides default styling for pagination that contains long
+                content and requires splitting content into shorter, easier to understand blocks.
+            </p>
+            <nav aria-label="Page Navigation">
+                <ul class="pager">
+                    <li><a href="#">&lt;</a></li>
+                    <li class="pager--current"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+        <!-- Queries -->
+        <div class="docs-section" id="queries">
+            <h2 class="docs-section__header">Media queries</h2>
+            <p>BEMSkel uses media queries to serve its scalable grid, but also has a list of queries for convenience of
+                styling across devices. The queries are mobile-first, meaning they target <code>min-width</code>.
+                Mobile-first queries are how BEMSkel's grid is built and is the preferable method of organizing CSS. It
+                means <u>all styles outside of a media query apply to all devices</u>, then larger devices are targeted
+                for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the
+                queries are:</p>
+            <div class="docs-sample row">
+                <div class="col col--6">
+                    <ul>
+                        <li><strong>Desktop HD</strong>: 1200px</li>
+                        <li><strong>Desktop</strong>: 1000px</li>
+                        <li><strong>Tablet</strong>: 750px</li>
+                    </ul>
+                </div>
+                <div class="col col--6">
+                    <ul>
+                        <li><strong>Phablet</strong>: 550px</li>
+                        <li><strong>Mobile</strong>: 400px</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="container">
+        <!-- Utilities and Misc. -->
+        <div class="docs-section" id="utilities">
+            <h2 class="docs-section__header">Utilities</h2>
+            <p>BEMSkel has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to
+                use a utility class than create a whole new class just to float an element.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- Dropdown -->
+        <div class="docs-section" id="dropdown">
+            <h2 class="docs-section__header">Dropdown</h2>
+            <div class="dropdown">
+                <button onclick="dropdownbtn()" class="dropbtn btn btn-primary">Dropdown</button>
+                <div id="menu" class="dropdown-content">
+                    <a href="#test">Testing 1</a>
+                    <a href="#test">Testing 1</a>
+                    <a href="#test">Testing 1</a>
+                    <a href="#test">Testing 1</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <script src="app.js"></script>
+    <script>
+        function dropdownbtn() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
