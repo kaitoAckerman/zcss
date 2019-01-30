@@ -13,7 +13,6 @@
     font-weight: 100;
     height: 38px;
     letter-spacing: .1rem;
-    line-height: 38px;
     padding: 0 30px;
     text-align: center;
     text-decoration: none;
@@ -36,7 +35,7 @@
 // Basic Colors
 
 .btn--primary {
-    color: $white;
+    color: #000;
     background-color: $color-primary;
     border-color: $color-primary;
 
