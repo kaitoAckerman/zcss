@@ -1,4 +1,4 @@
-.modal{
+.modal {
     display: none;
     position: fixed;
     top: 0;
@@ -9,16 +9,37 @@
     display: none;
     overflow: hidden;
     outline: 0;
-    .modal-content{
+    background: rgba(0, 0, 0, 0.3);
+
+    .modal__content {
         background: white;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
         border-radius: 5px;
-        padding: 10px;
         max-width: 500px;
         margin: 1.75rem auto;
+
+        .modal__header {
+            padding: 10px;
+            background: $gray-lighter;
+            border-radius: 3px 3px 0px 0px;
+
+            .modal__title {
+                font-size: 1.5em;
+                margin: 0px;
+            }
+        }
+
+        .modal__body {
+            padding: 15px 10px;
+
+        }
+
+        .modal__footer {
+            padding: 10px;
+        }
     }
 }
 
-.modal--active{
+.modal--active {
     display: block;
 }
