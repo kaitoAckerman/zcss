@@ -1,12 +1,11 @@
-// Tables
-
 .table {
-  thead > tr {
+  thead>tr {
     border-bottom: .2rem solid $gray-light;
   }
 }
 
 .table--bordered {
+
   th,
   td {
     border: .05rem solid $gray-light;
@@ -14,30 +13,30 @@
 }
 
 .table--striped {
-  tbody > tr:nth-child(odd) > td {
+  tbody>tr:nth-child(odd)>td {
     background-color: $gray-lighter;
   }
 }
 
 .table--hover {
   tbody tr {
-     &:hover {
-      background-color: $gray-lighter  ;
+    &:hover {
+      background-color: $gray-lighter;
     }
   }
 }
 
 .table--compact {
-  thead > tr {
+  thead>tr {
     border-bottom: .2rem solid $gray-light;
   }
+
   th,
   td {
     padding: .3rem;
   }
 }
 
-// responsive table container
 .table-responsive {
   overflow-x: auto;
   width: 100%;
