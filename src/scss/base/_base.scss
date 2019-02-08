@@ -1,26 +1,3 @@
-// Contains all basic styles of elements.
-// -----------------------------------------------------------------------------
-// Make all elements from the DOM inherit from the parent box-sizing
-//  Since `*` has a specificity of 0, it does not override the `html` value
-//  making all elements inheriting from the root box-sizing value
-//  See:  https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-
-
-// Apply a natural box layout model to all elements, but allowing components
-// to change. Html is set to 62.5% so that all the REM measurements throughout
-// are based on 10px sizing. So basically 1.4rem = 14px
-
-// html {
-//   font-size: 62.5%;
-// }
-
-// body {
-//   font-size: 1.5em; // currently ems cause chrome bug misinterpreting rems on body element
-//   line-height: 1.6;
-//   font-weight: 400;
-//   font-family: $font-sans-serif;
-//   color: $font-color;
-// }
 
 html {
   box-sizing: border-box;
@@ -134,8 +111,6 @@ figcaption {
 
 
 table {
-  // border-spacing: 0;
-  // border: 0;
   border-collapse: collapse;
   border-color: gray;
   border-spacing: 2px;
@@ -250,7 +225,6 @@ label > .label-body {
 // Code
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Contain overflow in all browsers.
 pre {
   overflow: auto;
 }
