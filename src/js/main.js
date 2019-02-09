@@ -1,10 +1,16 @@
-
 /* Modal test */
 $('[data-modal]').click(function () {
     $('#' + $(this).data('modal')).addClass('modal--active');
+    $('#' + $(this).data('modal') + '> .modal__content').addClass('animated bounceInDown');
 })
 $('[data-dismiss]').click(function () {
-    $('#' + $(this).data('dismiss')).removeClass('modal--active');
+    var dismiss = this;
+    setTimeout(function () {
+        $('#' + $(dismiss).data('dismiss')).removeClass('modal--active');
+        $('#' + $(dismiss).data('dismiss') + '> .modal__content').removeClass('animated bounceOutUp');
+    }, 800);
+    $('#' + $(this).data('dismiss') + '> .modal__content').removeClass('animated bounceInDown');
+    $('#' + $(this).data('dismiss') + '> .modal__content').addClass('animated bounceOutUp');
 })
 
 /* Dropdown button in JS */
