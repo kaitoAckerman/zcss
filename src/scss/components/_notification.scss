@@ -4,6 +4,8 @@
     display: block;
     background: $color-gray--lightest;
     color: $color-gray--darkest;
+    border-radius: $global-radius;
+    box-shadow: $shadow-1;
 
     &.notify--info {
         background: $color-info--light;
