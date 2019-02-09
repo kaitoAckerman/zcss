@@ -29,19 +29,21 @@ $font-size--xs: ceil($font-size * 0.85); // ~12px
 
 
 // Gray colors for theme
-$gray-lightest: #f6f6f6;
-$gray-lighter: #e4e4e4;
-$gray-light: #d3d3d3;
-$gray: #a8a8a8;
-$gray-dark: #7e7e7e;
-$gray-darker: #545454;
-$gray-darkest: #2a2a2a;
+$color-gray: #222222;
+$color-gray--light: lighten($color-gray, 10%) !default;
+$color-gray--lighter: lighten($color-gray, 30%) !default;
+$color-gray--lightest: lighten($color-gray, 60%) !default;
+
+$color-gray--dark: darken($color-gray, 10%) !default;
+$color-gray--darker: darken($color-gray, 30%) !default;
+$color-gray--darkest: darken($color-gray, 60%) !default;
+
+
 
 // Classic brand colors
 $color-primary: #34887C;
 $color-primary--dark: darken($color-primary, 20%) !default;
 $color-primary--light: lighten($color-primary, 30%) !default;
-$color-secondary: $gray-dark !default;
 
 $color-info: #5BC0EB;
 $color-info--dark: darken($color-info, 30%) !default;

@@ -81,7 +81,7 @@ p {
 
 blockquote {
   margin: 0 0 2.4rem 1.2rem;
-  border-left: .3rem solid $gray-darker;
+  border-left: .3rem solid $color-gray--darker;
   padding: 2.4rem 1.2rem;
 
   p:last-child {
@@ -125,12 +125,12 @@ q {
 
 dfn,
 abbr {
-  border-bottom: .1rem dotted $gray-light;
+  border-bottom: .1rem dotted $color-gray--lightest;
   cursor: default;
 }
 
 dfn,
 abbr {
-  border-bottom: .1rem dotted $gray-light;
+  border-bottom: .1rem dotted $color-gray--lightest;
   cursor: default;
 }
