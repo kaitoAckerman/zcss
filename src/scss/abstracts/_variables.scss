@@ -13,7 +13,6 @@ $border-color: #bbb !default;
 // Font variables
 $font-sans-serif: 'Barlow',
 sans-serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-monospace: Menlo,
 Monaco,
 Consolas,
@@ -40,13 +39,25 @@ $gray-darkest: #2a2a2a;
 
 // Classic brand colors
 $color-primary: #34887C;
-$color-primary--dark: darken($color-primary, 5%) !default;
+$color-primary--dark: darken($color-primary, 20%) !default;
+$color-primary--light: lighten($color-primary, 30%) !default;
 $color-secondary: $gray-dark !default;
 
 $color-info: #5BC0EB;
-$color-success: #0BAB41;
+$color-info--dark: darken($color-info, 30%) !default;
+$color-info--light: lighten($color-info, 20%) !default;
+
+$color-success: #28a745;
+$color-success--dark: darken($color-success, 30%) !default;
+$color-success--light: lighten($color-success, 20%) !default;
+
 $color-warning: #F7B733;
+$color-warning--dark: darken($color-warning, 30%) !default;
+$color-warning--light: lighten($color-warning, 20%) !default;
+
 $color-danger: #EA3921;
+$color-danger--dark: darken($color-danger, 30%) !default;
+$color-danger--light: lighten($color-danger, 20%) !default;
 
 $color-link: #496DDB !default;
 $color-link--visited: #9140D4 !default;
