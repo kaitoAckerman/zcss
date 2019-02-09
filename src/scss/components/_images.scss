@@ -1,0 +1,14 @@
+img{
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: .6rem;
+
+    &.img--rounded{
+        border-radius: 50%;
+    }
+
+    &.img--raised{
+        box-shadow: $shadow;
+    }
+}
