@@ -1,6 +1,11 @@
 /* Notify */
-$('.notify').click(function(){
-    $(this).removeAttr("style").hide();
+$('.notify').click(function () {
+    var notify = this;
+    setTimeout(function () {
+        $(notify).removeAttr("style").hide();
+    }, 800);
+    $(this).removeClass('shake');
+    $(this).addClass('animated fadeOut');
 });
 
 /* Modal */
