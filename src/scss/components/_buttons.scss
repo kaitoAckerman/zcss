@@ -41,6 +41,7 @@
         color: $white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -54,6 +55,7 @@
         color: $white;
         background-color: darken($color-success, 10%);
         border-color: $color-success;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -67,6 +69,7 @@
         color: $white;
         background-color: darken($color-warning, 10%);
         border-color: $color-warning;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -80,6 +83,7 @@
         color: $white;
         background-color: darken($color-danger, 10%);
         border-color: $color-danger;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -95,6 +99,7 @@
         color: $white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -110,6 +115,7 @@
         color: $white;
         background-color: $color-primary;
         border-color: $color-primary;
+        transition: all .3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -123,6 +129,7 @@
         color: $white;
         background-color: $color-success !important;
         border-color: $color-success;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -136,6 +143,7 @@
         color: $white;
         background-color: $color-warning;
         border-color: $color-warning;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -149,6 +157,7 @@
         color: $white;
         background-color: $color-danger;
         border-color: $color-danger;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -164,6 +173,8 @@
     &:focus,
     &:hover {
         color: darken($color-primary, 10%);
+        background: $color-gray--lightest;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -177,6 +188,8 @@
     &:focus,
     &:hover {
         color: darken($color-success, 10%);
+        background: $color-gray--lightest;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -190,6 +203,8 @@
     &:focus,
     &:hover {
         color: darken($color-warning, 10%);
+        background: $color-gray--lightest;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -203,6 +218,8 @@
     &:focus,
     &:hover {
         color: darken($color-danger, 10%);
+        background: $color-gray--lightest;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
 
@@ -217,10 +234,9 @@
 }
 
 // Raised Style
-.btn--raised {
-    border-width: 0;
-    border-bottom-width: 3px;
-    border-bottom-color: rgba(0, 0, 0, 0.15);
+.btn--raised:hover {
+    box-shadow: $shadow;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 [type="submit"],
