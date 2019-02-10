@@ -15,6 +15,7 @@
     text-decoration: none;
     transition-duration: 200ms;
     white-space: nowrap;
+    line-height: 34px;
 
     &:focus,
     &:hover {
@@ -241,6 +242,6 @@
 
 [type="submit"],
 [type="reset"],
-[type="button"] {
+[type="button"]{
     @extend .btn;
 }
