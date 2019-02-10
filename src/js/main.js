@@ -1,3 +1,14 @@
+/* Masonry */
+$('.masonry').isotope({
+    itemSelector: '.masonry__item',
+    masonry: {
+        gutter: 10,
+        horizontalOrder: true,
+    }
+
+});
+
+
 /* Notify */
 $('.notify').click(function () {
     var notify = this;
