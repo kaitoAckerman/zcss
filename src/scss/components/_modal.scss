@@ -16,11 +16,10 @@
         border-radius: 5px;
         max-width: 500px;
         margin: 1.75rem auto;
+        padding: 1.8rem;
 
         .modal__header {
-            padding: 10px;
-            background: $color-gray--lightest;
-            border-radius: 3px 3px 0px 0px;
+            padding: .9rem 0rem;
 
             .modal__title {
                 font-size: 1.5em;
@@ -28,13 +27,8 @@
             }
         }
 
-        .modal__body {
-            padding: 15px 10px;
-
-        }
-
-        .modal__footer {
-            padding: 10px;
+        .modal__body, .modal__footer {
+            padding: .9rem 0rem;
         }
     }
 }
