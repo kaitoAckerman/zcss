@@ -1,0 +1,16 @@
+input,
+select {
+    border-radius: 3rem !important;
+    padding: .3rem .9rem;
+}
+
+input,
+select,
+textarea {
+    border: .2rem solid transparent !important;
+
+    &:hover, &:active{
+        border: .2rem solid $color-primary !important;
+        transition: 0.25s;
+    }
+}
