@@ -13,7 +13,7 @@
     }
 }
 
-@media ($bp-larger-than-mobile) {
+@media ($bp-larger-than-phablet) {
     .masonry {
         .masonry__item {
             width: calc((100% - 10px)/2);
