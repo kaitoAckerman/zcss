@@ -15,6 +15,7 @@
     text-decoration: none;
     transition-duration: 200ms;
     white-space: nowrap;
+    vertical-align: middle;
 
     &:focus,
     &:hover {
@@ -41,6 +42,10 @@
         color: $white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
+
+        .icon-ios-finger-print-float {
+            background-color: $white;
+        }
     }
 }
 
@@ -110,6 +115,10 @@
         color: $white;
         background-color: $color-primary;
         border-color: $color-primary;
+
+        .icon-ios-finger-print-outline {
+            background-color: $white;
+        }
     }
 }
 
@@ -164,6 +173,10 @@
     &:focus,
     &:hover {
         color: darken($color-primary, 10%);
+
+        .icon-ios-finger-print-text {
+            background-color: darken($color-primary, 10%);
+        }
     }
 }
 
