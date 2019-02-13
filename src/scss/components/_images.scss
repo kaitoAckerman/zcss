@@ -1,0 +1,36 @@
+img{
+    object-fit: cover;
+    border-radius: .6rem;
+
+    &.img--rounded{
+        border-radius: 50%;
+        height: 260px;
+        width: 260px;
+    }
+
+    &.img--raised{
+        box-shadow: $shadow;
+    }
+
+    &.img--32{
+        height: 32px;
+        width: 32px;
+    }
+
+    &.img--48{
+        height: 48px;
+        width: 48px;
+    }
+
+    &.img--rounded--32{
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    &.img--rounded--48{
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+    }
+}

@@ -9,7 +9,7 @@
     "watch:css": "onchange -p 1000 \"src/scss/**\" -- npm run build:css",
     "watch:js": "onchange -p 1000 \"src/js/*.js\" -- npm run build:js",
     "build:css": "node-sass --output-style compressed -o public src/scss",
-    "build:js": "uglifyjs node_modules/jquery/public/jquery.js src/js/*.js -m -c -o public/app.js"
+    "build:js": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/isotope-layout/dist/isotope.pkgd.min.js src/js/*.js -m -c -o public/app.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "lite-server": "^2.4.0",
     "node-sass": "^4.9.2",
     "onchange": "^4.0.0",
-    "uglify-js": "^3.4.4"
+    "uglify-js": "^3.4.4",
+    "isotope-layout": "^3.0.6"
   }
 }

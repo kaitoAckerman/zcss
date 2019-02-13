@@ -1,8 +1,8 @@
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   height: 100%;
+  background: #E9EBEE;
 }
 
 *,
@@ -37,7 +37,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid $gray-light;
+  border-top: 1px solid $color-gray--lightest;
 }
 
 // Lists
@@ -56,14 +56,18 @@ ol {
 ul {
   padding-left: 0;
   margin-top: 0;
-  ul, ol {
+
+  ul,
+  ol {
     margin: 1.5rem 0 1.5rem 3rem;
     font-size: 90%;
   }
 }
 
 ol {
-  ol, ul {
+
+  ol,
+  ul {
     margin: 1.5rem 0 1.5rem 3rem;
     font-size: 90%;
   }
@@ -119,7 +123,7 @@ table {
 
   thead th {
     vertical-align: bottom;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $color-gray--lightest;
   }
 
   th,
@@ -136,7 +140,7 @@ table {
   }
 
   td {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $color-gray--lightest;
     padding: .6rem;
     text-align: left;
     vertical-align: top;
@@ -163,6 +167,7 @@ select {
 
 // Removes awkward default styles on some inputs for iOS
 input {
+
   &[type="email"],
   &[type="number"],
   &[type="search"],
@@ -210,13 +215,14 @@ fieldset {
 }
 
 input {
+
   &[type="checkbox"],
   &[type="radio"] {
     display: inline;
   }
 }
 
-label > .label-body {
+label>.label-body {
   display: inline-block;
   font-weight: normal;
   margin-left: .5rem;
@@ -230,16 +236,16 @@ pre {
 }
 
 code {
-  background: lighten($gray-light, 6.4%);
+  background: lighten($color-gray--lightest, 6.4%);
   border-radius: $global-radius;
-  border: 1px solid $gray-light;
+  border: 1px solid $color-gray--lightest;
   font-size: 90%;
   margin: 0 .2rem;
   padding: .2rem .5rem;
   white-space: nowrap;
 }
 
-pre > code {
+pre>code {
   display: block;
   padding: 1rem 1.5rem;
   white-space: pre;

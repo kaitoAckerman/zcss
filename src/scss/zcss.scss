@@ -6,6 +6,7 @@
 // 2. Abstracts 
 @import 'abstracts/variables',
 'abstracts/functions',
+'abstracts/animate',
 'abstracts/mixins';
 
 
@@ -27,6 +28,11 @@
 'components/media-queries',
 'components/navbar',
 'components/dropdown',
+'components/labels',
+'components/notification',
+'components/masonry',
 'components/modal',
 'components/card',
-'components/icons';
+'components/icons',
+'components/images',
+'components/card';

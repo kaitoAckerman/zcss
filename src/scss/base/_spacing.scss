@@ -23,3 +23,19 @@ li {
 label {
   margin-bottom: .25rem;
 }
+
+/* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
+$spaceamounts: (10, 20, 30, 40, 50, 100); 
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}--#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .p-#{str-slice($side, 0, 1)}--#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}

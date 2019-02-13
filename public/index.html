@@ -16,11 +16,6 @@
     <!-- Open Graph meta data -->
     <meta property="og:title" content="Zcss" />
     <meta property="og:description" content="Zcss simple css framework cloned from BEMskel" />
-    <style>
-        html {
-            background: #E9EBEE;
-        }
-    </style>
 </head>
 
 <body>
@@ -29,8 +24,8 @@
         <div class="container">
             <div class="navbar__logo"><a href="#">Logo</a></div>
             <ul class="navbar__menu menu--left">
-                <li class="navbar__item"><a href="#">Test 1</a></li>
-                <li class="navbar__item"><a href="#">Test 2</a></li>
+                <li class="navbar__item"><a href="#" class="btn btn--primary">Test 1</a></li>
+                <li class="navbar__item"><a href="#" class="btn btn--primary">Test 2</a></li>
                 <li class="navbar__item">
                     <button class="btn btn--success">Secondary</button>
                 </li>
@@ -183,14 +178,14 @@
                     <button class="btn btn-outline--warning" type="button">Warning</button>
                     <button class="btn btn-outline--danger" type="button">Danger</button>
                 </div><br>
-                <h5>Float Styles</h5>
+                <h5>Raised Styles</h5>
                 <div>
-                    <button class="btn btn--primary" type="button"><i class="icon icon-ios-finger-print-float"></i>Primary</button>
-                    <button class="btn btn--success" type="button">Success</button>
-                    <button class="btn btn--warning" type="button">Warning</button>
-                    <button class="btn btn--danger" type="button">Danger</button>
+                    <button class="btn btn--primary btn--raised" type="button"><i class="icon icon-ios-finger-print-raised"></i>Primary</button>
+                    <button class="btn btn--success btn--raised" type="button">Success</button>
+                    <button class="btn btn--warning btn--raised" type="button">Warning</button>
+                    <button class="btn btn--danger btn--raised" type="button">Danger</button>
                     <br><br>
-                    <button class="btn btn--block" type="button">Block Button</button>
+                    <button class="btn btn--block btn--raised" type="button">Block Button</button>
                 </div><br>
                 <h5>Buttons with Icons</h5>
                 <p>BEMSkel does not include an icon font, but works nicely with popular ones such as <a href="http://fontawesome.io/icons/">FontAwesome</a>.
@@ -569,7 +564,7 @@
         <button class="btn btn--primary" data-modal="demo-modal">
             Launch Modal
         </button>
-        <div class="modal fade" id="demo-modal">
+        <div class="modal" id="demo-modal">
             <div class="modal__content">
                 <div class="modal__header">
                     <h5 class="modal__title">Modal title</h5>
@@ -639,6 +634,61 @@
                         eius, obcaecati magni!</div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- Images -->
+    <div class="container">
+        <h2>Images</h2>
+        <div class="row">
+            <div class="col col--4">
+                <img src="imgs/ningyu-he-1269678-unsplash.jpg" alt="mtfuji">
+            </div>
+            <div class="col col--4">
+                <img class="img--rounded img--raised" src="imgs/ningyu-he-1269678-unsplash.jpg" alt="mtfuji">
+            </div>
+            <div class="col col--4">
+                <img class="img--raised" src="imgs/ningyu-he-1269678-unsplash.jpg" alt="mtfuji">
+            </div>
+        </div>
+        <img class="img--48" src="imgs/logo.png">
+    </div>
+
+    <hr>
+    <!-- Labels -->
+    <div class="container">
+        <h2>Labels</h2>
+        <span class="label">lorem</span>
+        <span class="label label--info">ipsum</span>
+        <span class="label label--success">dolor</span>
+        <span class="label label--warning">ipsum</span>
+        <span class="label label--danger">dolor</span>
+    </div>
+
+    <hr>
+    <!-- Notification -->
+    <div class="container">
+        <h2>Notification</h2>
+        <div class="notify">This is notification. Click this to dismiss</div>
+        <div class="notify notify--info">This is notification. Click this to dismiss</div>
+        <div class="notify notify--success">This is notification. Click this to dismiss</div>
+        <div class="notify animated shake notify--warning">This is notification. Click this to dismiss</div>
+        <div class="notify animated shake notify--danger">This is notification. Click this to dismiss</div>
+    </div>
+
+    <hr>
+    <!-- Masonry card -->
+    <div class="container">
+        <h1>Masonry</h1>
+        <div class="masonry">
+            <div class="masonry__item card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi similique deleniti doloribus, expedita laudantium sed quis esse laborum, at, sapiente repudiandae magnam optio dignissimos quos iure voluptas non illum ipsam!</div>
+            <div class="masonry__item card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptatum accusantium deserunt modi. Eveniet voluptates ut ex ratione corporis quisquam! Neque beatae soluta unde aspernatur ipsum numquam id quisquam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis eaque magni porro voluptate iure maxime placeat nesciunt deleniti voluptates adipisci accusamus, dolores assumenda. Amet consequatur sequi ad qui illo.</div>
+            <div class="masonry__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolorem maiores consequatur modi, rem accusamus dolore facilis quidem optio laboriosam, dignissimos cum inventore totam nobis neque? Quasi neque placeat et.</div>
+            <div class="masonry__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolorem maiores consequatur modi, rem accusamus dolore facilis quidem optio laboriosam, dignissimos cum inventore totam nobis neque? Quasi neque placeat et.</div>
+            <div class="masonry__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolorem maiores consequatur modi, rem accusamus dolore facilis quidem optio laboriosam, dignissimos cum inventore totam nobis neque? Quasi neque placeat et.</div>
+            <div class="masonry__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolorem maiores consequatur modi, rem accusamus dolore facilis quidem optio laboriosam, dignissimos cum inventore totam nobis neque? Quasi neque placeat et.</div>
+            <div class="masonry__item card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, dolorem maiores consequatur modi, rem accusamus dolore facilis quidem optio laboriosam, dignissimos cum inventore totam nobis neque? Quasi neque placeat et.</div>
         </div>
     </div>
 
