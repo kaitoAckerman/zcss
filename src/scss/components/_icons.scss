@@ -1,4 +1,4 @@
-.icon {
+i {
     display: inline-block;
     height: 25px;
     width: 25px;
@@ -6,33 +6,20 @@
     cursor: pointer;
     background-size: contain;
     vertical-align: middle;
-    margin-right: 5px;
-    margin-bottom: 3px;
+    margin: auto .3rem;
 
-    &.icon-ios-finger-print-text {
-        -webkit-mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        background-color: $color-primary;
-        
-    }
-
-    &.icon-ios-finger-print-outline {
-        -webkit-mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        background-color: $color-primary;
-        
-    }
-
-    &.icon-ios-finger-print-raised {
-        -webkit-mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
-        -webkit-mask-size: cover;
-        mask-size: cover;
+    &.icon--white {
         background-color: $white;
-        
+    }
+
+    &.icon--primary {
+        background-color: $color-primary;
+    }
+
+    &.icon-ios-finger-print {
+        -webkit-mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
+        mask: url(../svg/ios-finger-print.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
     }
 }

@@ -14,7 +14,7 @@
 
         .navbar__menu {
             list-style: none;
-            display: flex;
+            display: none;
             flex-direction: row;
             margin: 0;
 
@@ -23,9 +23,29 @@
                 display: flex;
                 align-items: center;
 
-                &:last-child{
+                &:last-child {
                     margin: 1.2rem 0rem 1.2rem .6rem;
                 }
+            }
+
+        }
+
+        .navbar__icon {
+            display: flex;
+            align-items: center;
+            margin: auto 1.2rem;
+            
+            i{
+                margin: auto 1.2rem;
+            }
+        }
+
+        @media (#{$bp-larger-than-desktop}) {
+            .navbar__menu {
+                display: flex;
+            }
+            .navbar__icon {
+                display: none;
             }
         }
     }
@@ -35,7 +55,7 @@
     margin-left: auto !important;
 }
 
-.navbar--primary{
+.navbar--primary {
     background-color: $color-primary;
     color: white;
 }
