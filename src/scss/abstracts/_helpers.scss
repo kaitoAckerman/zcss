@@ -1,4 +1,3 @@
-
 .u-full-width {
   width: 100%;
 }
@@ -15,7 +14,7 @@
   float: left;
 }
 
-.u-disabled{
+.u-disabled {
   cursor: default;
   opacity: .5;
   pointer-events: none;
@@ -34,7 +33,8 @@
 
 .u-hide-text {
   overflow: hidden;
-  padding: 0; /* 1 */
+  padding: 0;
+  /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -64,3 +64,18 @@
   text-align: right;
 }
 
+/* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
+$spaceamounts: (10, 20, 30, 40, 50, 100);
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}--#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}--#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}

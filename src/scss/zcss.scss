@@ -4,24 +4,23 @@
 @import 'vendors/normalize';
 
 // 2. Abstracts 
-@import 'abstracts/variables',
-'abstracts/functions',
-'abstracts/animate',
+@import 'abstracts/functions',
+'abstracts/helpers',
 'abstracts/mixins';
 
 
 // 3. Base 
-@import 'base/base',
-'base/helpers',
+@import 'base/variables',
+'base/base',
+'base/animate',
 'base/typography',
-'base/forms',
 'base/grid',
-'base/grid-flex',
-'base/spacing';
+'base/grid-flex';
 
 // 5. Components
 @import 'components/buttons',
 'components/pagination',
+'components/forms',
 'components/tables',
 'components/media-queries',
 'components/navbar',
