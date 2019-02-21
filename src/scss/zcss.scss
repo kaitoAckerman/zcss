@@ -14,12 +14,10 @@
 @import 'base/base',
 'base/helpers',
 'base/typography',
+'base/forms',
+'base/grid',
+'base/grid-flex',
 'base/spacing';
-
-// 4. Layout
-@import 'layout/forms',
-'layout/grid',
-'layout/grid-flex';
 
 // 5. Components
 @import 'components/buttons',
