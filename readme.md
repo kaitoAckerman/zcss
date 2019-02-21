@@ -8,7 +8,7 @@ Css framework cloned from [BEMskel](http://bemskel.com/) created for Znounce web
 ### Using CDN
 > https://gl.githack.com/znounce/zcss/raw/master/public/zcss.css
 
-# BEM
+# BEM (Block Element & Modifier)
 
 ```scss
 /* Block component */
