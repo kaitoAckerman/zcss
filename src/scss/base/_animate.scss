@@ -1,6 +1,6 @@
 /*! Animate from https://daneden.github.io/animate.css/ */
 
-@-webkit-keyframes bounceInDown {
+@-webkit-keyframes animate--bounceInDown {
 
     from,
     60%,
@@ -39,7 +39,7 @@
     }
 }
 
-@keyframes bounceInDown {
+@keyframes animate--bounceInDown {
 
     from,
     60%,
@@ -78,7 +78,7 @@
     }
 }
 
-@-webkit-keyframes bounceOutUp {
+@-webkit-keyframes animate--bounceOutUp {
     20% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
@@ -98,7 +98,7 @@
     }
 }
 
-@keyframes bounceOutUp {
+@keyframes animate--bounceOutUp {
     20% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
@@ -118,7 +118,7 @@
     }
 }
 
-@-webkit-keyframes shake {
+@-webkit-keyframes animate--shake {
 
     from,
     to {
@@ -144,7 +144,7 @@
     }
 }
 
-@keyframes shake {
+@keyframes animate--shake {
 
     from,
     to {
@@ -170,7 +170,7 @@
     }
 }
 
-@-webkit-keyframes bounceOut {
+@-webkit-keyframes animate--bounceOut {
     20% {
         -webkit-transform: scale3d(0.9, 0.9, 0.9);
         transform: scale3d(0.9, 0.9, 0.9);
@@ -190,7 +190,7 @@
     }
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes animate--fadeOut {
     from {
         opacity: 1;
     }
@@ -200,7 +200,7 @@
     }
 }
 
-@keyframes fadeOut {
+@keyframes animate--fadeOut {
     from {
         opacity: 1;
     }
@@ -210,7 +210,7 @@
     }
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes animate--fadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
@@ -224,7 +224,7 @@
     }
 }
 
-@keyframes fadeInUp {
+@keyframes animate--fadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
@@ -244,27 +244,27 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
-    &.bounceInDown {
+    &.animate--bounceInDown {
         -webkit-animation-name: bounceInDown;
         animation-name: bounceInDown;
     }
 
-    &.bounceOutUp {
+    &.animate--bounceOutUp {
         -webkit-animation-name: bounceOutUp;
         animation-name: bounceOutUp;
     }
 
-    &.shake {
+    &.animate--shake {
         -webkit-animation-name: shake;
         animation-name: shake;
     }
 
-    &.fadeOut {
+    &.animate--fadeOut {
         -webkit-animation-name: fadeOut;
         animation-name: fadeOut;
     }
 
-    &.fadeInUp {
+    &.animate--fadeInUp {
         -webkit-animation-name: fadeInUp;
         animation-name: fadeInUp;
     }
