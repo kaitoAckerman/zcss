@@ -9,13 +9,12 @@ button {
     font-size: inherit;
     font-weight: 100;
     height: 38px;
-    letter-spacing: .1rem;
-    padding: 0 30px;
+    margin: 0px .3rem;
+    padding: 0 2.1rem;
     text-align: center;
     text-decoration: none;
     transition-duration: 200ms;
     white-space: nowrap;
-    vertical-align: middle;
     line-height: 34px;
 
     &:focus,
