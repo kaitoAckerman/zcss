@@ -1,6 +1,6 @@
 /*! Animate from https://daneden.github.io/animate.css/ */
 
-@-webkit-keyframes animate--bounceInDown {
+@-webkit-keyframes bounceInDown {
 
     from,
     60%,
@@ -39,7 +39,7 @@
     }
 }
 
-@keyframes animate--bounceInDown {
+@keyframes bounceInDown {
 
     from,
     60%,
@@ -78,7 +78,7 @@
     }
 }
 
-@-webkit-keyframes animate--bounceOutUp {
+@-webkit-keyframes bounceOutUp {
     20% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
@@ -98,7 +98,7 @@
     }
 }
 
-@keyframes animate--bounceOutUp {
+@keyframes bounceOutUp {
     20% {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0);
@@ -118,7 +118,7 @@
     }
 }
 
-@-webkit-keyframes animate--shake {
+@-webkit-keyframes shake {
 
     from,
     to {
@@ -144,7 +144,7 @@
     }
 }
 
-@keyframes animate--shake {
+@keyframes shake {
 
     from,
     to {
@@ -170,7 +170,7 @@
     }
 }
 
-@-webkit-keyframes animate--bounceOut {
+@-webkit-keyframes bounceOut {
     20% {
         -webkit-transform: scale3d(0.9, 0.9, 0.9);
         transform: scale3d(0.9, 0.9, 0.9);
@@ -190,7 +190,7 @@
     }
 }
 
-@-webkit-keyframes animate--fadeOut {
+@-webkit-keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -200,7 +200,7 @@
     }
 }
 
-@keyframes animate--fadeOut {
+@keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -210,7 +210,7 @@
     }
 }
 
-@-webkit-keyframes animate--fadeInUp {
+@-webkit-keyframes fadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
@@ -224,7 +224,7 @@
     }
 }
 
-@keyframes animate--fadeInUp {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);

@@ -16,22 +16,22 @@ $('.notify').click(function () {
         $(notify).removeAttr("style").hide();
     }, 800);
     $(this).removeClass('shake');
-    $(this).addClass('animated fadeOut');
+    $(this).addClass('animate animate--fadeOut');
 });
 
 /* Modal */
 $('[data-modal]').click(function () {
     $('#' + $(this).data('modal')).addClass('modal--active');
-    $('#' + $(this).data('modal') + '> .modal__content').addClass('animated bounceInDown');
+    $('#' + $(this).data('modal') + '> .modal__content').addClass('animate animate--bounceInDown');
 });
 $('[data-dismiss]').click(function () {
     var dismiss = this;
     setTimeout(function () {
         $('#' + $(dismiss).data('dismiss')).removeClass('modal--active');
-        $('#' + $(dismiss).data('dismiss') + '> .modal__content').removeClass('animated bounceOutUp');
+        $('#' + $(dismiss).data('dismiss') + '> .modal__content').removeClass('animate animate--bounceOutUp');
     }, 800);
-    $('#' + $(this).data('dismiss') + '> .modal__content').removeClass('animated bounceInDown');
-    $('#' + $(this).data('dismiss') + '> .modal__content').addClass('animated bounceOutUp');
+    $('#' + $(this).data('dismiss') + '> .modal__content').removeClass('animate animate--bounceInDown');
+    $('#' + $(this).data('dismiss') + '> .modal__content').addClass('animate animate--bounceOutUp');
 });
 
 /* Dropdown button in JS */
