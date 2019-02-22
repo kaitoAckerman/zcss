@@ -40,12 +40,12 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
 
         .icon--iosFingerPrint {
-            background-color: $white;
+            background-color: $color-white;
         }
 
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -55,11 +55,11 @@ button {
 .btn--success {
     background-color: $color-success;
     border-color: $color-success;
-    color: $white;
+    color: $color-white;
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: darken($color-success, 10%);
         border-color: $color-success;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -69,11 +69,11 @@ button {
 .btn--warning {
     background-color: $color-warning;
     border-color: $color-warning;
-    color: $white;
+    color: $color-white;
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: darken($color-warning, 10%);
         border-color: $color-warning;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -83,11 +83,11 @@ button {
 .btn--danger {
     background-color: $color-danger;
     border-color: $color-danger;
-    color: $white;
+    color: $color-white;
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: darken($color-danger, 10%);
         border-color: $color-danger;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -95,7 +95,7 @@ button {
 }
 
 .btn--block {
-    color: $white;
+    color: $color-white;
     background-color: $color-primary;
     border-color: $color-primary;
     display: block;
@@ -103,7 +103,7 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -119,13 +119,13 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: $color-primary;
         border-color: $color-primary;
 
         .icon--iosFingerPrint {
             &.icon--primary-outline {
-                background-color: $white;
+                background-color: $color-white;
             }
         }
 
@@ -140,7 +140,7 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: $color-success !important;
         border-color: $color-success;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -154,7 +154,7 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: $color-warning;
         border-color: $color-warning;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -168,7 +168,7 @@ button {
 
     &:focus,
     &:hover {
-        color: $white;
+        color: $color-white;
         background-color: $color-danger;
         border-color: $color-danger;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);

@@ -27,6 +27,8 @@ $font-size--md: ceil($font-size * 1.14); // ~16px
 $font-size--sm: ceil($font-size * 0.92); // ~13px
 $font-size--xs: ceil($font-size * 0.85); // ~12px
 
+// Primary background color
+$color-bg: #E9EBEE;
 
 // Gray colors for theme
 $color-gray: #222222;
@@ -37,8 +39,6 @@ $color-gray--lightest: lighten($color-gray, 60%) !default;
 $color-gray--dark: darken($color-gray, 10%) !default;
 $color-gray--darker: darken($color-gray, 30%) !default;
 $color-gray--darkest: darken($color-gray, 60%) !default;
-
-
 
 // Classic brand colors
 $color-primary: #34887C;
@@ -66,7 +66,7 @@ $color-link--visited: #9140D4 !default;
 $color-link--hover: darken($color-link, 10%) !default;
 $color-link--active: #D44076 !default;
 
-$white: #ffffff !default;
+$color-white: #ffffff !default;
 
 // Grid Variables
 $container-width: 1000px !default;
