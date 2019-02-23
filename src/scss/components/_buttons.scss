@@ -17,10 +17,11 @@ button {
     white-space: nowrap;
     line-height: 34px;
 
+    
     &:focus,
     &:hover {
         border-color: $color-primary;
-        background-color: transparent;
+        background-color: $color-primary;
         color: $color-primary;
     }
 
@@ -42,11 +43,6 @@ button {
         color: $color-white;
         background-color: darken($color-primary, 10%);
         border-color: $color-primary;
-
-        .icon--iosFingerPrint {
-            background-color: $color-white;
-        }
-
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 }
@@ -121,14 +117,11 @@ button {
         color: $color-white;
         background-color: $color-primary;
         border-color: $color-primary;
-
-        .icon--iosFingerPrint {
-            &.icon--primary-outline {
-                background-color: $color-white;
-            }
-        }
-
         transition: all .3s cubic-bezier(.25, .8, .25, 1);
+
+        i{
+            background-color: $color-white;
+        }
     }
 }
 
@@ -185,14 +178,6 @@ button {
     &:focus,
     &:hover {
         color: darken($color-primary, 10%);
-
-        .icon--iosFingerPrint {
-
-            &.icon--primary-text {
-                background-color: darken($color-primary, 10%);
-            }
-        }
-
         background: $color-gray--lightest;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
