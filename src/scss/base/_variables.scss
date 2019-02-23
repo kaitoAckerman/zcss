@@ -22,10 +22,10 @@ $font-base: $font-sans-serif;
 $font-color: #222222 !default;
 
 $font-size: 1.6rem !default;
-$font-size--lg: ceil($font-size * 1.23); // ~20px
-$font-size--md: ceil($font-size * 1.14); // ~16px
-$font-size--sm: ceil($font-size * 0.92); // ~13px
-$font-size--xs: ceil($font-size * 0.85); // ~12px
+$font-size--lg: calc(#{$font-size} * 1.23); // ~20px
+$font-size--md: calc(#{$font-size} * 1.14); // ~16px
+$font-size--sm: calc(#{$font-size} * 0.92); // ~13px
+$font-size--xs: calc(#{$font-size} * 0.85); // ~12px
 
 // Primary background color
 $color-bg: #E9EBEE;
