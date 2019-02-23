@@ -1,16 +1,21 @@
 .empty {
     width: 100%;
-    display: flex;
     padding: 6rem 1.2rem;
     background-color: darken($color-white, 18%);
     text-align: center;
+    border-radius: 1rem;
 
     .empty__logo {
-        
+        height: 82px;
+        width: 82px;
+        cursor: help;
+        background-color: $color-gray;
     }
 
     .empty__text {
         font-size: $font-size--md;
         width: inherit;
+        margin: .9rem 0rem;
+        color: $color-gray;
     }
 }
