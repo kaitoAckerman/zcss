@@ -7,10 +7,7 @@ i {
     background-size: contain;
     vertical-align: middle;
     margin: auto .3rem;
-
-    &.icon--white {
-        background-color: $color-white;
-    }
+    background-color: $color-white;
 
     &.icon--primary {
         background-color: $color-primary;
