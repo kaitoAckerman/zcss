@@ -57,7 +57,7 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 .h--mauto{
-  margin: auto;
+  margin: auto !important;
 }
 
 // Text styling
