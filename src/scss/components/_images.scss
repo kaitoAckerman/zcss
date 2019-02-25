@@ -22,15 +22,7 @@ img{
         width: 48px;
     }
 
-    &.img--rounded32{
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-    }
-
-    &.img--rounded48{
-        height: 48px;
-        width: 48px;
+    &.img--rounded{
         border-radius: 50%;
     }
 }

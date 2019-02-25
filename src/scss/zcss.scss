@@ -4,14 +4,14 @@
 @import 'vendors/normalize';
 
 // 2. Abstracts 
-@import 'abstracts/functions',
+@import 'abstracts/variables',
+'abstracts/functions',
 'abstracts/helpers',
 'abstracts/mixins';
 
 
 // 3. Base 
-@import 'base/variables',
-'base/base',
+@import 'base/base',
 'base/animate',
 'base/typography',
 'base/grid',

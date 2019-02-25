@@ -34,17 +34,53 @@
 }
 
 /* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
-$spaceamounts: (10, 20, 30, 40, 50, 100);
+$spaceamounts: (0, 10, 20, 30, 40, 50, 100, auto);
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {
+
+  .h--m#{$space}{
+    margin: #{$space}px !important;
+  }
+  .h--p#{$space}{
+    padding: #{$space}px !important;
+  }
+
   @each $side in $sides {
-    .m-#{str-slice($side, 0, 1)}--#{$space} {
+    .h--m#{str-slice($side, 0, 1)}#{$space} {
       margin-#{$side}: #{$space}px !important;
     }
 
-    .p-#{str-slice($side, 0, 1)}--#{$space} {
+    .h--p#{str-slice($side, 0, 1)}#{$space} {
       padding-#{$side}: #{$space}px !important;
     }
   }
+}
+.h--mauto{
+  margin: auto;
+}
+
+// Text styling
+.h--textGray{
+  color: $color-gray--lighter !important;
+}
+
+// Background colors
+.h--bgPrimary{
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+// Display
+.h--dFlex{
+  display: flex;
+}
+
+// Misc
+.h--shadow{
+  box-shadow: $shadow-2;
+}
+
+.h--bRadius{
+  border-radius: .6rem;
 }
