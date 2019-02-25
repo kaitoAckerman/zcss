@@ -19,4 +19,164 @@ i {
         -webkit-mask-size: cover;
         mask-size: cover;
     }
+
+    //register
+    &.icon--mdPersonAdd {
+        -webkit-mask: url(svg/md-person-add.svg) no-repeat 100% 100%;
+        mask: url(svg/md-person-add.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //login
+    &.icon--mdLogIn {
+        -webkit-mask: url(svg/md-log-in.svg) no-repeat 100% 100%;
+        mask: url(svg/md-log-in.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //smile face
+    &.icon--iosHappy {
+        -webkit-mask: url(svg/ios-happy.svg) no-repeat 100% 100%;
+        mask: url(svg/ios-happy.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //hand
+    &.icon--mdHand {
+        -webkit-mask: url(svg/md-hand.svg) no-repeat 100% 100%;
+        mask: url(svg/md-hand.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //user account
+    &.icon--mdUserAccount {
+        -webkit-mask: url(svg/md-contact.svg) no-repeat 100% 100%;
+        mask: url(svg/md-contact.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //email address
+    &.icon--mdMail {
+        -webkit-mask: url(svg/md-mail.svg) no-repeat 100% 100%;
+        mask: url(svg/md-mail.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //location
+    &.icon--mdLocate {
+        -webkit-mask: url(svg/md-locate.svg) no-repeat 100% 100%;
+        mask: url(svg/md-locate.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //tagging
+    &.icon--mdPriceTag {
+        -webkit-mask: url(svg/md-pricetag.svg) no-repeat 100% 100%;
+        mask: url(svg/md-pricetag.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //edit
+    &.icon--iosCreate {
+        -webkit-mask: url(svg/ios-create.svg) no-repeat 100% 100%;
+        mask: url(svg/ios-create.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //comment
+    &.icon--iosChatBubbles {
+        -webkit-mask: url(svg/ios-chatbubbles.svg) no-repeat 100% 100%;
+        mask: url(svg/ios-chatbubbles.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //user
+    &.icon--mdPerson {
+        -webkit-mask: url(svg/md-person.svg) no-repeat 100% 100%;
+        mask: url(svg/md-person.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //bookmark/save
+    &.icon--mdBookmark {
+        -webkit-mask: url(svg/md-bookmark.svg) no-repeat 100% 100%;
+        mask: url(svg/md-bookmark.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //group of people
+    &.icon--mdPeople {
+        -webkit-mask: url(svg/md-people.svg) no-repeat 100% 100%;
+        mask: url(svg/md-people.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //add
+    &.icon--iosAdd {
+        -webkit-mask: url(svg/ios-add.svg) no-repeat 100% 100%;
+        mask: url(svg/ios-add.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //delete/trash
+    &.icon--mdTrash {
+        -webkit-mask: url(svg/md-trash.svg) no-repeat 100% 100%;
+        mask: url(svg/md-trash.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //sad face
+    &.icon--iosSad {
+        -webkit-mask: url(svg/ios-sad.svg) no-repeat 100% 100%;
+        mask: url(svg/ios-sad.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //date
+    &.icon--mdCalendar {
+        -webkit-mask: url(svg/md-calendar.svg) no-repeat 100% 100%;
+        mask: url(svg/md-calendar.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //time
+    &.icon--mdTime {
+        -webkit-mask: url(svg/md-time.svg) no-repeat 100% 100%;
+        mask: url(svg/md-time.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //setting/gear
+    &.icon--mdSettings {
+        -webkit-mask: url(svg/md-settings.svg) no-repeat 100% 100%;
+        mask: url(svg/md-settings.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    //sign out/logout
+    &.icon--mdLogOut {
+        -webkit-mask: url(svg/md-log-out.svg) no-repeat 100% 100%;
+        mask: url(svg/md-log-out.svg) no-repeat 100% 100%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
 }
