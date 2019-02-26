@@ -10,7 +10,7 @@ button {
     font-weight: 100;
     height: 38px;
     margin: 0px .3rem;
-    padding: 0 2.1rem;
+    padding: 0 1.5rem;
     text-align: center;
     text-decoration: none;
     transition-duration: 200ms;
@@ -169,7 +169,6 @@ button {
 
 // Text Button
 .btn--primaryText {
-    padding: 0 30px;
     border: none;
     background: none;
     cursor: pointer;
@@ -188,7 +187,6 @@ button {
 }
 
 .btn--successText {
-    padding: 0 30px;
     border: none;
     background: none;
     cursor: pointer;
@@ -203,7 +201,6 @@ button {
 }
 
 .btn--warningText {
-    padding: 0 30px;
     border: none;
     background: none;
     cursor: pointer;
@@ -218,7 +215,6 @@ button {
 }
 
 .btn--dangerText {
-    padding: 0 30px;
     border: none;
     background: none;
     cursor: pointer;
