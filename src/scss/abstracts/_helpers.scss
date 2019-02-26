@@ -1,17 +1,17 @@
 .h--fullWidth {
-  width: 100%;
+  width: 100% !important;
 }
 
 .h--maxFullWidth {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .h--pullRight {
-  float: right;
+  float: right !important;
 }
 
 .h--pullLeft {
-  float: left;
+  float: left !important;
 }
 
 .h--disabled {
@@ -22,15 +22,15 @@
 
 // Text Alignment
 .h--textLeft {
-  text-align: left;
+  text-align: left !important;
 }
 
 .h--textCenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 .h--textRight {
-  text-align: right;
+  text-align: right !important;
 }
 
 /* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
@@ -67,20 +67,20 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 // Background colors
 .h--bgPrimary{
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $color-primary !important;
+  color: $color-white !important;
 }
 
 // Display
 .h--dFlex{
-  display: flex;
+  display: flex !important;
 }
 
 // Misc
 .h--shadow{
-  box-shadow: $shadow-2;
+  box-shadow: $shadow-2 !important;
 }
 
 .h--bRadius{
-  border-radius: .6rem;
+  border-radius: .6rem !important;
 }
