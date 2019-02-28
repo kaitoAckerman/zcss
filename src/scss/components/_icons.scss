@@ -11,8 +11,24 @@ i {
     vertical-align: middle;
     background-color: $color-white;
 
+    // Icon color
+    &.icon--colorDefault {
+        background-color: $color-gray--lighter;
+    }
     &.icon--colorPrimary {
         background-color: $color-primary;
+    }
+    &.icon--colorInfo {
+        background-color: $color-info;
+    }
+    &.icon--colorSuccess {
+        background-color: $color-success;
+    }
+    &.icon--colorWarning {
+        background-color: $color-warning;
+    }
+    &.icon--colorDanger {
+        background-color: $color-danger;
     }
 
     &.icon--iosFingerPrint {
