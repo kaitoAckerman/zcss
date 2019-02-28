@@ -30,9 +30,10 @@ button {
 
 }
 
-.btn--icon{
+.btn--icon {
     padding: 0rem .6rem;
-    i{
+
+    i {
         margin: 0px;
     }
 }
@@ -185,6 +186,15 @@ button {
         color: $color-white;
         background: $color-primary;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+        i {
+            background-color: $color-white;
+        }
+    }
+
+    &.btn--active {
+        color: $color-white;
+        background: $color-primary;
 
         i {
             background-color: $color-white;
