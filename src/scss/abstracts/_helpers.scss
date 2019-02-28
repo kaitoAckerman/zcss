@@ -45,6 +45,18 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   .h--p#{$space}{
     padding: #{$space}px !important;
   }
+  .h--mx#{$space}{
+    padding: 0px #{$space}px !important;
+  }
+  .h--py#{$space}{
+    padding: #{$space}px 0px !important;
+  }
+  .h--mx#{$space}{
+    margin: 0px #{$space}px !important;
+  }
+  .h--py#{$space}{
+    margin: #{$space}px 0px !important;
+  }
 
   @each $side in $sides {
     .h--m#{str-slice($side, 0, 1)}#{$space} {
