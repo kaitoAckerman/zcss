@@ -1,0 +1,29 @@
+// Tooltips
+.tooltip {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        background-color: $color-gray--light;
+        content: attr(data-tooltip);
+        max-width: 320px;
+        bottom: 100%;
+        left: 0;
+        color: $color-white;
+        box-shadow: $shadow;
+        border-radius: $global-radius;
+        padding: .6rem;
+        transition: opacity .2s, transform .2s;
+        opacity: 0;
+        white-space: pre-wrap;
+    }
+
+    &:focus,
+    &:hover {
+        &::after {
+            opacity: 1;
+            transform: translate(0, -.3rem);
+        }
+    }
+
+}
