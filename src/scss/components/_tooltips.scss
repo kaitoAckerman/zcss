@@ -9,13 +9,14 @@
         max-width: 320px;
         bottom: 100%;
         left: 0;
+        font-size: 1em;
         color: $color-white;
         box-shadow: $shadow;
         border-radius: $global-radius;
         padding: .6rem;
         transition: opacity .2s, transform .2s;
         opacity: 0;
-        white-space: pre-wrap;
+        line-height: 2.1rem;
     }
 
     &:focus,
