@@ -79,8 +79,8 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 // Background colors
 .h--bgDefault{
-  background-color: $color-gray--lighter !important;
-  color: $color-white !important;
+  background-color: $color-bg !important;
+  color: $color-gray !important;
 }
 .h--bgPrimary{
   background-color: $color-primary !important;
@@ -101,6 +101,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 .h--bgDanger{
   background-color: $color-danger !important;
   color: $color-white !important;
+}
+.h--bgWhite{
+  background-color: $color-white !important;
+  color: $color-gray !important;
 }
 
 // Display

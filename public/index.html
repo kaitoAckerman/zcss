@@ -218,33 +218,41 @@
                 <form>
                     <div class="row">
                         <div class="col col--6">
-                            <label for="exampleEmailInput">Your email</label>
-                            <div class="input--logo">
-                                <input class="h--fullWidth" type="email" placeholder="test@mydomain.com" id="exampleEmailInput">
-                                <i class="icon--iosFingerPrint"></i>
-                            </div>
+                            <div class="form__group">
+								<label for="exampleEmailInput">Your email</label>
+								<div class="input--logo">
+									<input class="h--fullWidth" type="email" placeholder="test@mydomain.com" id="exampleEmailInput">
+									<i class="icon--iosFingerPrint"></i>
+								</div>
+							</div>
                         </div>
                         <div class="col col--6">
-                            <label for="exampleRecipientInput">Reason for Contacting</label>
-                            <select class="h--fullWidth" id="exampleRecipientInput">
-                                <option value="Option 1">Inquiry</option>
-                                <option value="Option 2">Thanks</option>
-                                <option value="Option 3">Issues</option>
-                            </select>
+							<div class="form__group">
+								<label for="exampleRecipientInput">Reason for Contacting</label>
+								<select class="h--fullWidth" id="exampleRecipientInput">
+									<option value="Option 1">Inquiry</option>
+									<option value="Option 2">Thanks</option>
+									<option value="Option 3">Issues</option>
+								</select>
+							</div>
                         </div>
-                    </div>
-                    <label class="radio">
-                        <input type="radio" name="example">
-                        <span class="radio__label label-body">Option 1</span>
-                        <input type="radio" name="example">
-                        <span class="radio__label label-body">Option 2</span>
-                    </label>
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="h--fullWidth" placeholder="Hi Karlo &hellip;" id="exampleMessage"></textarea>
-                    <label class="sample__send-yourself-copy">
-                        <input type="checkbox">
-                        <span class="label-body">Send a copy to yourself</span>
-                    </label>
+					</div>
+					<div class="form__group">
+						<label class="radio">
+							<input type="radio" name="example">
+							<span class="radio__label label-body">Option 1</span>
+							<input type="radio" name="example">
+							<span class="radio__label label-body">Option 2</span>
+						</label>
+					</div>
+					<div class="form__group">
+						<label for="exampleMessage">Message</label>
+						<textarea class="h--fullWidth" placeholder="Hi Karlo &hellip;" id="exampleMessage"></textarea>
+						<label class="sample__send-yourself-copy">
+							<input type="checkbox">
+							<span class="label-body">Send a copy to yourself</span>
+						</label>
+					</div>
                     <input class="btn btn--primary" type="submit" value="Submit">
                 </form>
             </div>

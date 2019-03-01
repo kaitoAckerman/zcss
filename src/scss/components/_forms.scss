@@ -1,34 +1,51 @@
 input,
 select {
-  border-radius: 3rem !important;
-  padding: 0.3rem 0.9rem;
+    border-radius: 3rem !important;
+    padding: 0.3rem 0.9rem;
 }
 
 input,
 select,
 textarea {
-  border: 0.2rem solid transparent !important;
+    border: 0.2rem solid $color-bg !important;
+    height: 38px;
 
-  &:hover,
-  &:active {
-    border: 0.2rem solid $color-primary !important;
-    transition: 0.25s;
-  }
+    &:hover,
+    &:active,
+    &:focus {
+        border: 0.2rem solid $color-primary !important;
+        transition: 0.25s;
+    }
+
+    &:hover+i,
+    &:focus+i {
+        background-color: $color-primary !important;
+        transition: 0.25s;
+    }
+}
+
+.form__group {
+    margin: 2rem .3rem;
+
+    label {
+        margin: .9rem .6rem;
+    }
 }
 
 .input--logo {
-  position: relative;
+    position: relative;
 
-  input {
-    padding-right: 3.6rem;
-  }
+    input {
+        padding-right: 3.6rem;
+    }
 
-  i {
-    position: absolute;
-    right: 6px;
-    padding: 10px 12px;
-    pointer-events: none;
-    background: $color-primary;
-    top: 6px;
-  }
+    i {
+        position: absolute;
+        right: 6px;
+        padding: 10px 12px;
+        pointer-events: none;
+        background: $color-primary;
+        top: 6px;
+        background: $color-gray--lighter;
+    }
 }
