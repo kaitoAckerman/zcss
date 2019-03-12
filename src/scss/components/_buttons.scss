@@ -176,13 +176,14 @@ button {
 
 // Text Button
 .btn--primaryText {
-    border: none;
+    border: 2px solid transparent;
     background: none;
     cursor: pointer;
     color: $color-primary;
 
     &:focus,
     &:hover {
+        border: 2px solid transparent;
         color: $color-white;
         background: $color-primary;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -203,13 +204,14 @@ button {
 }
 
 .btn--successText {
-    border: none;
+    border: 2px solid transparent;
     background: none;
     cursor: pointer;
     color: $color-success;
 
     &:focus,
     &:hover {
+        border: 2px solid transparent;
         color: $color-white;
         background: $color-success;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -217,13 +219,14 @@ button {
 }
 
 .btn--warningText {
-    border: none;
+    border: 2px solid transparent;
     background: none;
     cursor: pointer;
     color: $color-warning;
 
     &:focus,
     &:hover {
+        border: 2px solid transparent;
         color: $color-white;
         background: $color-warning;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -231,13 +234,14 @@ button {
 }
 
 .btn--dangerText {
-    border: none;
+    border: 2px solid transparent;
     background: none;
     cursor: pointer;
     color: $color-danger;
 
     &:focus,
     &:hover {
+        border: 2px solid transparent;
         color: $color-white;
         background: $color-danger;
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
