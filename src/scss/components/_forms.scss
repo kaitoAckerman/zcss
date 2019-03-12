@@ -20,7 +20,9 @@ textarea {
     }
 
     &:hover+i,
-    &:focus+i {
+    &:focus+i,
+    &:hover+button,
+    &:focus+button {
         background-color: $color-primary !important;
     }
 }
@@ -46,12 +48,11 @@ textarea {
         padding-right: 3.6rem;
     }
 
-    i {
+    i,
+    button {
         position: absolute;
         right: 6px;
         padding: 10px 12px;
-        pointer-events: none;
-        background: $color-primary;
         top: 8px;
         background: $color-gray--lighter;
     }
