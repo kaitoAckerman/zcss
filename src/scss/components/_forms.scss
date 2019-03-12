@@ -10,19 +10,18 @@ textarea {
     border: 0.2rem solid darken($color-bg, 10%) !important;
     background: darken($color-bg, 10%);
     height: 39px;
+    transition: 0.25s;
 
     &:hover,
     &:active,
     &:focus {
         border: 0.2rem solid $color-primary !important;
-        background: $color-bg;
-        transition: 0.25s;
+        background: $color-white;
     }
 
     &:hover+i,
     &:focus+i {
         background-color: $color-primary !important;
-        transition: 0.25s;
     }
 }
 
