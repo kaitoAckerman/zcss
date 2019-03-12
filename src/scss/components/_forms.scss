@@ -4,16 +4,18 @@ select {
     padding: 0.3rem 0.9rem;
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
 select,
 textarea {
-    border: 0.2rem solid $color-bg !important;
+    border: 0.2rem solid darken($color-bg, 10%) !important;
+    background: darken($color-bg, 10%);
     height: 39px;
 
     &:hover,
     &:active,
     &:focus {
         border: 0.2rem solid $color-primary !important;
+        background: $color-bg;
         transition: 0.25s;
     }
 
@@ -29,6 +31,12 @@ textarea {
 
     label {
         margin: .9rem .6rem;
+    }
+
+    .form__hint {
+        margin: .6rem;
+        font-size: 1.3rem;
+        color: $color-gray--light;
     }
 }
 
