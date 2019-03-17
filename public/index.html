@@ -573,13 +573,18 @@
         <div class="docs-section" id="dropdown">
             <h2 class="docs-section__header">Dropdown</h2>
             <div class="dropdown">
-                <button onclick="dropdownbtn()" class="dropbtn btn btn-primary">Dropdown</button>
-                <div id="menu" class="dropdown-content">
-                    <a href="#test">Testing 1</a>
-                    <a href="#test">Testing 1</a>
-                    <a href="#test">Testing 1</a>
-                    <a href="#test">Testing 1</a>
-                </div>
+                <button class="btn btn-primary dropdown__toggle">Dropdown</button>
+                <ul class="dropdown__menu">
+                    <li class="dropdown__menuItem">
+                        <a href="#test">Testing 1</a>
+                    </li>
+                    <li class="dropdown__menuItem">
+                        <a href="#test">Testing 1</a>
+                    </li>
+                    <li class="dropdown__menuItem">
+                        <a href="#test">Testing 1</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -805,11 +810,6 @@
 
     <hr>
     <script src="app.js"></script>
-    <script>
-        function dropdownbtn() {
-            document.getElementById("menu").classList.toggle("show");
-        }
-    </script>
 </body>
 
 </html>
