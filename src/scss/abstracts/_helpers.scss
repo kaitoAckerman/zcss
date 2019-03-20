@@ -34,7 +34,7 @@
 }
 
 /* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
-$spaceamounts: (0, 10, 20, 30, 40, 50, 100, auto);
+$spaceamounts: (0, 10, 20, 30, 40, 50, 100);
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {
@@ -70,6 +70,14 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 }
 .h--mauto{
   margin: auto !important;
+}
+
+.h--mxauto{
+  margin: 0px auto !important;
+}
+
+.h--myauto{
+  margin: auto 0px !important;
 }
 
 // Text styling
