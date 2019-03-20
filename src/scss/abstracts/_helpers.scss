@@ -46,16 +46,16 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     padding: #{$space}px !important;
   }
   .h--mx#{$space}{
-    margin: 0px #{$space} !important;
+    margin: 0px #{$space}px !important;
   }
   .h--my#{$space}{
-    margin: #{$space} 0px !important;
+    margin: #{$space}px 0px !important;
   }
   .h--px#{$space}{
-    padding: 0px #{$space} !important;
+    padding: 0px #{$space}px !important;
   }
   .h--py#{$space}{
-    padding: #{$space} 0px !important;
+    padding: #{$space}px 0px !important;
   }
 
   @each $side in $sides {
