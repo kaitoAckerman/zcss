@@ -4,7 +4,7 @@ select {
     padding: 0.3rem 0.9rem;
 }
 
-input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(disabled),
 select,
 textarea {
     border: 0.2rem solid darken($color-bg, 10%) !important;
