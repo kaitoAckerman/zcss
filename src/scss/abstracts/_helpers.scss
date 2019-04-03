@@ -46,16 +46,20 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     padding: #{$space}px !important;
   }
   .h--mx#{$space}{
-    margin: 0px #{$space}px !important;
+    margin-left: #{$space}px !important;
+    margin-right: #{$space}px !important;
   }
   .h--my#{$space}{
-    margin: #{$space}px 0px !important;
+    margin-top: #{$space}px !important;
+    margin-bottom: #{$space}px !important;
   }
   .h--px#{$space}{
-    padding: 0px #{$space}px !important;
+    padding-left: #{$space}px !important;
+    padding-right: #{$space}px !important;
   }
   .h--py#{$space}{
-    padding: #{$space}px 0px !important;
+    padding-top: #{$space}px !important;
+    padding-bottom: #{$space}px !important;
   }
 
   @each $side in $sides {
@@ -73,11 +77,13 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 }
 
 .h--mxauto{
-  margin: 0px auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .h--myauto{
-  margin: auto 0px !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
 }
 
 // Text styling
