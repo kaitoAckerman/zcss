@@ -1,0 +1,19 @@
+.show--lg, .hide--sm {
+	@media (#{$bp-larger-than-mobile}) {
+		display: none !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: block !important;
+	}
+}
+
+.show--sm, .hide--lg {
+	@media (#{$bp-larger-than-mobile}) {
+		display: block !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: none !important;
+	}
+}

@@ -5,8 +5,15 @@ Css framework cloned from [BEMskel](http://bemskel.com/) created for Znounce web
 
 # Getting Started
 
-### Using CDN
+## Using CDN
 > https://gl.githack.com/znounce/zcss/raw/master/public/zcss.css
+
+## For development
+
+1. Make sure docker is installed
+2. run `docker-compose up`
+3. website will be available at `localhost:8000`
+
 
 # BEM (Block Element & Modifier)
 

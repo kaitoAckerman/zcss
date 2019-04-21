@@ -15,7 +15,8 @@
 'base/animate',
 'base/typography',
 'base/grid',
-'base/grid-flex';
+'base/grid-flex',
+'base/media';
 
 // 5. Components
 @import 'components/buttons',
@@ -24,7 +25,6 @@
 'components/empty',
 'components/forms',
 'components/tables',
-'components/media-queries',
 'components/navbar',
 'components/dropdown',
 'components/labels',
