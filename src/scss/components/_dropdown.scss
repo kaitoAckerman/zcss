@@ -23,6 +23,7 @@
     .dropdown__menuItem {
       padding: .9rem;
       border-radius: .3rem;
+      cursor: pointer;
 
       &:hover {
         background-color: $color-primary;
