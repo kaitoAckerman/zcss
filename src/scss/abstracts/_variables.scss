@@ -29,6 +29,8 @@ $font-size--xs: calc(#{$font-size} * 0.85); // ~12px
 
 // Primary background color
 $color-bg: #E9EBEE;
+$color-bg--dark: darken($color-bg, 30%) !default;
+$color-bg--light: lighten($color-bg, 20%) !default;
 
 // Gray colors for theme
 $color-gray: #222222;
@@ -81,6 +83,6 @@ $flex-grid__column--fixed-width: 200px !default;
 $flex-grid--column-margin: 2% !default;
 
 // Shadow
-$shadow: 0 6px 32px 0 rgba(0,0,0,.3);
-$shadow-1: 0 1px 3px 0 rgba(0,0,0,.3);
-$shadow-2: 0 3px 6px 0 rgba(0,0,0,.3);
+$shadow: 0 6px 32px 0 rgba(0, 0, 0, .3);
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, .3);
+$shadow-2: 0 3px 6px 0 rgba(0, 0, 0, .3);
