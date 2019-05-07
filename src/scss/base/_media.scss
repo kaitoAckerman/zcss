@@ -1,19 +1,8 @@
-.show--lg, .hide--sm {
-	@media (#{$bp-larger-than-mobile}) {
-		display: none !important;
-	}
+// Who know maybe in the future with we might write code here.
+@media (#{$bp-larger-than-mobile}) {}
 
-	@media (#{$bp-larger-than-desktop}) {
-		display: block !important;
-	}
-}
+@media (#{$bp-larger-than-desktop}) {}
 
-.show--sm, .hide--lg {
-	@media (#{$bp-larger-than-mobile}) {
-		display: block !important;
-	}
+@media (#{$bp-larger-than-mobile}) {}
 
-	@media (#{$bp-larger-than-desktop}) {
-		display: none !important;
-	}
-}
+@media (#{$bp-larger-than-desktop}) {}

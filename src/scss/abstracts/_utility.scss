@@ -138,6 +138,27 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   display: flex !important;
 }
 
+// Hide & show element
+.u--showLg, .u--hideSm {
+	@media (#{$bp-larger-than-mobile}) {
+		display: none !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: block !important;
+	}
+}
+
+.u--showSm, .u--hideLg {
+	@media (#{$bp-larger-than-mobile}) {
+		display: block !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: none !important;
+	}
+}
+
 // Misc
 .u--shadow {
   box-shadow: $shadow-2 !important;
