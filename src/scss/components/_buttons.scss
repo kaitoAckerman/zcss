@@ -1,13 +1,14 @@
+// default, theme, modifier
+
 .btn,
 button {
     background-color: transparent;
     border-radius: 50px;
-    border: 2px solid $border-color;
+    border: 1px solid $color-gray--dark;
     color: $color-gray--dark;
     cursor: pointer;
     display: inline-block;
     font-size: inherit;
-    font-weight: bold;
     margin: 0px .3rem;
     padding: 0 1.5rem;
     text-align: center;
@@ -15,19 +16,6 @@ button {
     transition-duration: 200ms;
     white-space: nowrap;
     line-height: 34px;
-
-
-    &:focus,
-    &:hover {
-        border-color: $color-primary;
-        background-color: $color-primary;
-        color: $color-white;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
 }
 
 .btn--icon {
@@ -38,8 +26,7 @@ button {
     }
 }
 
-// Basic Colors
-
+// Theme color
 .btn--primary {
     color: white;
     background-color: $color-primary;
