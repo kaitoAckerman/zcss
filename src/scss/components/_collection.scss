@@ -3,13 +3,20 @@
 
     .collection__item {
         padding: 1.2rem;
-        border-radius: 0.9rem;
+        border-radius: 6px;
         transition: 0.2s;
 
+        i {
+            display: none;
+        }
+
         &:hover {
-            background-color: $color-bg--dark;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.1);
             color: $color-gray--darkest;
+
+            i {
+                display: inline-flex;
+            }
         }
     }
 }
