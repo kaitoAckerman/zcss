@@ -20,7 +20,7 @@
   pointer-events: none;
 }
 
-// Text Alignment
+// Text
 .u--textLeft {
   text-align: left !important;
 }
@@ -33,31 +33,41 @@
   text-align: right !important;
 }
 
+.u--textGray {
+  color: $color-gray--lighter !important;
+}
+
+// Spacing margin & padding
 /* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
 $spaceamounts: (0, 5, 10, 20, 30, 40, 50, 100);
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {
 
-  .u--m#{$space}{
+  .u--m#{$space} {
     margin: #{$space}px !important;
   }
-  .u--p#{$space}{
+
+  .u--p#{$space} {
     padding: #{$space}px !important;
   }
-  .u--mx#{$space}{
+
+  .u--mx#{$space} {
     margin-left: #{$space}px !important;
     margin-right: #{$space}px !important;
   }
-  .u--my#{$space}{
+
+  .u--my#{$space} {
     margin-top: #{$space}px !important;
     margin-bottom: #{$space}px !important;
   }
-  .u--px#{$space}{
+
+  .u--px#{$space} {
     padding-left: #{$space}px !important;
     padding-right: #{$space}px !important;
   }
-  .u--py#{$space}{
+
+  .u--py#{$space} {
     padding-top: #{$space}px !important;
     padding-bottom: #{$space}px !important;
   }
@@ -72,65 +82,67 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
   }
 }
-.u--mauto{
+
+.u--mauto {
   margin: auto !important;
 }
 
-.u--mxauto{
+.u--mxauto {
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-.u--myauto{
+.u--myauto {
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
 
-// Text styling
-.u--textGray{
-  color: $color-gray--lighter !important;
-}
-
 // Background colors
-.u--bgDefault{
+.u--bgDefault {
   background-color: $color-bg !important;
   color: $color-gray !important;
 }
-.u--bgPrimary{
+
+.u--bgPrimary {
   background-color: $color-primary !important;
   color: $color-white !important;
 }
-.u--bgInfo{
+
+.u--bgInfo {
   background-color: $color-info !important;
   color: $color-white !important;
 }
-.u--bgSuccess{
+
+.u--bgSuccess {
   background-color: $color-success !important;
   color: $color-white !important;
 }
-.u--bgWarning{
+
+.u--bgWarning {
   background-color: $color-warning !important;
   color: $color-white !important;
 }
-.u--bgDanger{
+
+.u--bgDanger {
   background-color: $color-danger !important;
   color: $color-white !important;
 }
-.u--bgWhite{
+
+.u--bgWhite {
   background-color: $color-white !important;
   color: $color-gray !important;
 }
 
 // Display
-.u--dFlex{
+.u--dFlex {
   display: flex !important;
 }
 
 // Misc
-.u--shadow{
+.u--shadow {
   box-shadow: $shadow-2 !important;
 }
 
-.u--bRadius{
+.u--bRadius {
   border-radius: .6rem !important;
 }
