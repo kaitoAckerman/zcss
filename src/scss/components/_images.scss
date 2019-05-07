@@ -2,12 +2,6 @@ img{
     object-fit: cover;
     border-radius: .6rem;
 
-    &.img--rounded{
-        border-radius: 50%;
-        height: 260px;
-        width: 260px;
-    }
-
     &.img--raised{
         box-shadow: $shadow;
     }
@@ -20,6 +14,16 @@ img{
     &.img--48{
         height: 48px;
         width: 48px;
+    }
+
+    &.img--150{
+        height: 150px;
+        width: 150px;
+    }
+
+    &.img--200{
+        height: 200px;
+        width: 200px;
     }
 
     &.img--rounded{
