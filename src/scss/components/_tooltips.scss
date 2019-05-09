@@ -3,28 +3,32 @@
     position: relative;
 
     &::after {
-        position: absolute;
-        background-color: $color-gray--light;
-        content: attr(data-tooltip);
-        max-width: 320px;
+        background: rgba(48, 55, 66, .95);
+        border-radius: 3px;
         bottom: 100%;
-        left: 0;
+        color: #fff;
+        content: attr(data-tooltip);
+        display: block;
         font-size: 1em;
-        color: $color-white;
-        box-shadow: $shadow;
-        border-radius: $global-radius;
-        padding: .6rem;
-        transition: opacity .2s, transform .2s;
+        left: 50%;
+        max-width: 320px;
         opacity: 0;
-        line-height: 2.1rem;
+        overflow: hidden;
+        padding: .6rem;
+        pointer-events: none;
+        position: absolute;
+        text-overflow: ellipsis;
+        transform: translate(-50%, .4rem);
+        transition: opacity .2s, transform .2s;
+        white-space: pre;
+        z-index: 300;
     }
 
     &:focus,
     &:hover {
         &::after {
             opacity: 1;
-            transform: translate(0, -.3rem);
+            transform: translate(-50%,-.2rem);
         }
     }
-
 }
