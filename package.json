@@ -28,6 +28,7 @@
     "node-sass": "^4.9.2",
     "onchange": "^4.0.0",
     "uglify-js": "^3.4.4",
-    "isotope-layout": "^3.0.6"
+    "isotope-layout": "^3.0.6",
+    "tar": ">=4.4.2"
   }
 }
