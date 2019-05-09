@@ -155,11 +155,6 @@ select {
   border: 1px solid lighten($border-color, 8.8%);
   border-radius: $global-radius;
   box-shadow: none;
-
-  &:focus {
-    border: 1px solid $color-primary;
-    outline: 0;
-  }
 }
 
 // Removes awkward default styles on some inputs for iOS

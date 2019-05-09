@@ -7,23 +7,14 @@ select {
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not(disabled),
 select,
 textarea {
-    border: 0.2rem solid darken($color-bg, 10%) !important;
+    border: 1px solid transparent;
     background: darken($color-bg, 10%);
     height: 39px;
     transition: 0.25s;
 
-    &:hover,
-    &:active,
-    &:focus {
-        border: 0.2rem solid $color-primary !important;
-        background: $color-white;
-    }
-
-    &:hover+i,
-    &:focus+i,
-    &:hover+button,
-    &:focus+button {
-        background-color: $color-primary !important;
+    &:focus{
+        background: white;
+        border: 1px solid $border-color;
     }
 }
 

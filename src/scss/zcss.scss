@@ -6,9 +6,8 @@
 // 2. Abstracts 
 @import 'abstracts/variables',
 'abstracts/functions',
-'abstracts/helpers',
-'abstracts/mixins';
-
+'abstracts/mixins',
+'abstracts/utility';
 
 // 3. Base 
 @import 'base/base',

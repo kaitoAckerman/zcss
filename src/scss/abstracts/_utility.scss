@@ -1,136 +1,169 @@
-.h--fullWidth {
+.u--fullWidth {
   width: 100% !important;
 }
 
-.h--maxFullWidth {
+.u--maxFullWidth {
   max-width: 100% !important;
 }
 
-.h--pullRight {
+.u--pullRight {
   float: right !important;
 }
 
-.h--pullLeft {
+.u--pullLeft {
   float: left !important;
 }
 
-.h--disabled {
+.u--disabled {
   cursor: default;
   opacity: .5;
   pointer-events: none;
 }
 
-// Text Alignment
-.h--textLeft {
+// Text
+.u--textLeft {
   text-align: left !important;
 }
 
-.h--textCenter {
+.u--textCenter {
   text-align: center !important;
 }
 
-.h--textRight {
+.u--textRight {
   text-align: right !important;
 }
 
+.u--textGray {
+  color: $color-gray--lighter !important;
+}
+
+// Spacing margin & padding
 /* Spacing helper from https://gist.github.com/jacurtis/30da4bf9a6c9b9b5cc0aebac512ca7c9 */
 $spaceamounts: (0, 5, 10, 20, 30, 40, 50, 100);
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {
 
-  .h--m#{$space}{
+  .u--m#{$space} {
     margin: #{$space}px !important;
   }
-  .h--p#{$space}{
+
+  .u--p#{$space} {
     padding: #{$space}px !important;
   }
-  .h--mx#{$space}{
+
+  .u--mx#{$space} {
     margin-left: #{$space}px !important;
     margin-right: #{$space}px !important;
   }
-  .h--my#{$space}{
+
+  .u--my#{$space} {
     margin-top: #{$space}px !important;
     margin-bottom: #{$space}px !important;
   }
-  .h--px#{$space}{
+
+  .u--px#{$space} {
     padding-left: #{$space}px !important;
     padding-right: #{$space}px !important;
   }
-  .h--py#{$space}{
+
+  .u--py#{$space} {
     padding-top: #{$space}px !important;
     padding-bottom: #{$space}px !important;
   }
 
   @each $side in $sides {
-    .h--m#{str-slice($side, 0, 1)}#{$space} {
+    .u--m#{str-slice($side, 0, 1)}#{$space} {
       margin-#{$side}: #{$space}px !important;
     }
 
-    .h--p#{str-slice($side, 0, 1)}#{$space} {
+    .u--p#{str-slice($side, 0, 1)}#{$space} {
       padding-#{$side}: #{$space}px !important;
     }
   }
 }
-.h--mauto{
+
+.u--mauto {
   margin: auto !important;
 }
 
-.h--mxauto{
+.u--mxauto {
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-.h--myauto{
+.u--myauto {
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
 
-// Text styling
-.h--textGray{
-  color: $color-gray--lighter !important;
-}
-
 // Background colors
-.h--bgDefault{
+.u--bgDefault {
   background-color: $color-bg !important;
   color: $color-gray !important;
 }
-.h--bgPrimary{
+
+.u--bgPrimary {
   background-color: $color-primary !important;
   color: $color-white !important;
 }
-.h--bgInfo{
+
+.u--bgInfo {
   background-color: $color-info !important;
   color: $color-white !important;
 }
-.h--bgSuccess{
+
+.u--bgSuccess {
   background-color: $color-success !important;
   color: $color-white !important;
 }
-.h--bgWarning{
+
+.u--bgWarning {
   background-color: $color-warning !important;
   color: $color-white !important;
 }
-.h--bgDanger{
+
+.u--bgDanger {
   background-color: $color-danger !important;
   color: $color-white !important;
 }
-.h--bgWhite{
+
+.u--bgWhite {
   background-color: $color-white !important;
   color: $color-gray !important;
 }
 
 // Display
-.h--dFlex{
+.u--dFlex {
   display: flex !important;
 }
 
+// Hide & show element
+.u--showLg, .u--hideSm {
+	@media (#{$bp-larger-than-mobile}) {
+		display: none !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: block !important;
+	}
+}
+
+.u--showSm, .u--hideLg {
+	@media (#{$bp-larger-than-mobile}) {
+		display: block !important;
+	}
+
+	@media (#{$bp-larger-than-desktop}) {
+		display: none !important;
+	}
+}
+
 // Misc
-.h--shadow{
+.u--shadow {
   box-shadow: $shadow-2 !important;
 }
 
-.h--bRadius{
+.u--bRadius {
   border-radius: .6rem !important;
 }
