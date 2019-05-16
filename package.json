@@ -4,12 +4,11 @@
   "description": "zcss boilerplate",
   "main": "index.js",
   "scripts": {
-    "live": "concurrently -k \"npm run dev\" \"npm run watch:css\" \"npm run watch:js\"",
-    "dev": "lite-server -c my-bs-config.json",
+    "live": "concurrently -k \"npm run watch:css\" \"npm run watch:js\" \"docsify serve .\"",
     "watch:css": "onchange -p 1000 \"src/scss/**\" -- npm run build:css",
     "watch:js": "onchange -p 1000 \"src/js/*.js\" -- npm run build:js",
-    "build:css": "node-sass --output-style compressed -o public src/scss",
-    "build:js": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/isotope-layout/dist/isotope.pkgd.min.js src/js/*.js -m -c -o public/app.js"
+    "build:css": "node-sass --output-style compressed -o dist src/scss",
+    "build:js": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/isotope-layout/dist/isotope.pkgd.min.js src/js/*.js -m -c -o dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,6 @@
   "devDependencies": {
     "concurrently": "^3.6.0",
     "jquery": "^3.3.1",
-    "lite-server": "^2.4.0",
     "node-sass": "^4.9.2",
     "onchange": "^4.0.0",
     "uglify-js": "^3.4.4",
