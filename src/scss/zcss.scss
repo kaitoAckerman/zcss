@@ -1,15 +1,12 @@
 @charset 'UTF-8';
 
-// 1. Vendors
-@import 'vendors/normalize';
-
-// 2. Abstracts 
+// 1. Abstracts 
 @import 'abstracts/variables',
 'abstracts/functions',
 'abstracts/mixins',
 'abstracts/utility';
 
-// 3. Base 
+// 2. Base 
 @import 'base/base',
 'base/animate',
 'base/typography',
@@ -17,7 +14,7 @@
 'base/grid-flex',
 'base/media';
 
-// 5. Components
+// 3. Components
 @import 'components/buttons',
 'components/collection',
 'components/tooltips',

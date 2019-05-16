@@ -5,7 +5,7 @@ services:
     build: .
     working_dir: /code
     ports:
-      - '8000:8000'
+      - '3000:3000'
     volumes:
       - .:/code
       - /code/node_modules
