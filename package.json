@@ -9,7 +9,7 @@
     "watch:js": "onchange -p 1000 \"src/js/*.js\" -- npm run build:js",
     "build:css": "node-sass --output-style compressed -o dist src/scss",
     "build:js": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/isotope-layout/dist/isotope.pkgd.min.js src/js/*.js -m -c -o dist/app.js",
-    "serve": "browser-sync start --server --files \"dist/*\""
+    "serve": "browser-sync start --server \"dist\" --files \"dist/*\""
   },
   "repository": {
     "type": "git",
