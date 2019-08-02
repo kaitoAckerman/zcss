@@ -2,9 +2,9 @@
   "name": "z4css",
   "version": "0.0.5",
   "description": "zcss boilerplate",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "live": "concurrently -k \"npm run watch:css\" \"npm run watch:js\" \"docsify serve .\"",
+    "live": "concurrently -k \"npm run watch:css\" \"npm run watch:js\"",
     "watch:css": "onchange -p 1000 \"src/scss/**\" -- npm run build:css",
     "watch:js": "onchange -p 1000 \"src/js/*.js\" -- npm run build:js",
     "build:css": "node-sass --output-style compressed -o dist src/scss",
