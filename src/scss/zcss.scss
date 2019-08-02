@@ -1,13 +1,19 @@
 @charset 'UTF-8';
 
+/* At the time I'm writing this code. Im not quite sure how to arrange this 
+three folder. Abstract, Base, Components. There is no specification how I grouped this 
+files at the moment. So yea, maybe some files make no sense. */
+
 // 1. Abstracts 
-@import 'abstracts/variables',
+@import 
+'abstracts/variables',
 'abstracts/functions',
 'abstracts/mixins',
 'abstracts/utility';
 
 // 2. Base 
-@import 'base/base',
+@import 
+'base/base',
 'base/animate',
 'base/typography',
 'base/grid',
@@ -15,7 +21,8 @@
 'base/media';
 
 // 3. Components
-@import 'components/buttons',
+@import 
+'components/buttons',
 'components/collection',
 'components/tooltips',
 'components/pagination',
