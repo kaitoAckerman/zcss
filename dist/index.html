@@ -6,12 +6,25 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Zcss by Znounce</title>
 
+		<link
+			href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="vendors/normalize.css" />
 		<link rel="stylesheet" href="zcss.css" />
+
+		<style>
+			* {
+				font-family: "Fira Code", monospace;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="navbar">
 			<div class="container">
+				<div class="navbar__logo">
+					<a href="#">Zcss</a>
+				</div>
 				<ul class="navbar__menu menu--left">
 					<li class="navbar__item">
 						<a href="#" class="btn">Base</a>
@@ -26,6 +39,37 @@
 			</div>
 		</div>
 
+        <!-- Intro Message -->
+		<div
+			class="container"
+			style="
+            text-align: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            "
+		>
+			<div>
+				<h1>Zcss</h1>
+				<h6>by Znounce</h6>
+			</div>
+        </div>
+        
+        <!-- Getting Started Guide -->
+        <div class="container u--mb50">
+            <h5>Getting Started</h5>
+            <p>Use this CDN link for both CSS and JS</p>
+            <p>https://gl.githack.com/znounce/zcss/raw/master/public/zcss.css & https://gl.githack.com/znounce/zcss/raw/master/public/zcss.js</p>
+            <p>The CDN will include all components, which is not what I intended for the final one. But at the being I think its okay. The idea was, I can customize what components I want based on my website requirements. And makes each components easy to understand and memorise using the simple pattern class name for CSS. Also I want to include modifier to modified the default components.</p>
+            <p>For the components there is default style. take Button for example. Then we can customize the default one using modifier class name. For example button with class name btn & btn--danger or btn & btn--dangerOutline. btn--{modifierName}. Got it ?</p>
+            <p>There will be Base folder, Abstract folder & Components folder. Base folder will include all the basics stuff for example body, typography, fonts, grid etc. And for the Abstract it will include some utility, function, mixin & variable to compile the Scss code.</p>
+        </div>
+
+        <div class="container u--mb50">
+            <h5>Base Components</h5>
+            <p>This base components will include Typography, Grid, & Breakpoint</p>
+        </div>
 		<script src="dist/zcss.js"></script>
 	</body>
 </html>
