@@ -10,6 +10,7 @@
 			href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="custom-for-demo.css" />
 		<link rel="stylesheet" href="vendors/normalize.css" />
 		<link rel="stylesheet" href="zcss.css" />
 
@@ -39,7 +40,7 @@
 			</div>
 		</div>
 
-        <!-- Intro Message -->
+		<!-- Intro Message -->
 		<div
 			class="container"
 			style="
@@ -54,22 +55,106 @@
 				<h1>Zcss</h1>
 				<h6>by Znounce</h6>
 			</div>
-        </div>
-        
-        <!-- Getting Started Guide -->
-        <div class="container u--mb50">
-            <h5>Getting Started</h5>
-            <p>Use this CDN link for both CSS and JS</p>
-            <p>https://gl.githack.com/znounce/zcss/raw/master/public/zcss.css & https://gl.githack.com/znounce/zcss/raw/master/public/zcss.js</p>
-            <p>The CDN will include all components, which is not what I intended for the final one. But at the being I think its okay. The idea was, I can customize what components I want based on my website requirements. And makes each components easy to understand and memorise using the simple pattern class name for CSS. Also I want to include modifier to modified the default components.</p>
-            <p>For the components there is default style. take Button for example. Then we can customize the default one using modifier class name. For example button with class name btn & btn--danger or btn & btn--dangerOutline. btn--{modifierName}. Got it ?</p>
-            <p>There will be Base folder, Abstract folder & Components folder. Base folder will include all the basics stuff for example body, typography, fonts, grid etc. And for the Abstract it will include some utility, function, mixin & variable to compile the Scss code.</p>
-        </div>
+		</div>
 
-        <div class="container u--mb50">
-            <h5>Base Components</h5>
-            <p>This base components will include Typography, Grid, & Breakpoint</p>
-        </div>
+		<!-- Getting Started Guide -->
+		<div class="container u--mb50">
+			<h5>Getting Started</h5>
+			<p>Use this CDN link for both CSS and JS</p>
+			<pre>
+https://gl.githack.com/znounce/zcss/raw/master/public/zcss.css &
+https://gl.githack.com/znounce/zcss/raw/master/public/zcss.js
+			</pre>
+			<p>
+				The CDN will include all components, which is not what I intended for the final one.
+				But at the being I think its okay. The idea was, I can customize what components I
+				want based on my website requirements. And makes each components easy to understand
+				and memorise using the simple pattern class name for CSS. Also I want to include
+				modifier to modified the default components.
+			</p>
+			<p>
+				For the components there is default style. take Button for example. Then we can
+				customize the default one using modifier class name. For example button with class
+				name btn & btn--danger or btn & btn--dangerOutline. btn--{modifierName}. Got it ?
+			</p>
+			<p>
+				There will be Base folder, Abstract folder & Components folder. Base folder will
+				include all the basics stuff for example body, typography, fonts, grid etc. And for
+				the Abstract it will include some utility, function, mixin & variable to compile the
+				Scss code.
+			</p>
+			<p>Do you really read what I <b>wrote</b> ??.</p>
+		</div>
+
+		<div class="container u--mb50">
+			<h5>Base Components</h5>
+			<p>
+				This base components will include Typography, Grid, & Breakpoint. Yea, this is the
+				foundation for Zcss
+			</p>
+
+			<h5 class="u--mt30">Typography</h5>
+			<p>
+				Here the typography. At the moment I use Karla font which already included in the
+				compiled scss. So once I include the compiled css, Karla fonts will be set by
+				default.
+			</p>
+
+			<pre>
+                <h1>Typography</h1>
+                <h2>Typography</h2>
+                <h3>Typography</h3>
+                <h4>Typography</h4>
+                <h5>Typography</h5>
+                <h6>Typography</h6>
+                <p>Typography</p>
+            </pre>
+
+			<h5 class="mt30">Grid</h5>
+			<p>
+				Here the Grid. This grid I fork from getskeleton Css framework and modified some of
+				the code. I think.
+			</p>
+
+			<div class="row">
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--1">col 1</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--1">col 1</div>
+				<div class="demo col col--11">col col--11</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--2">col col--2</div>
+				<div class="demo col col--10">col col--10</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--3">col col--3</div>
+				<div class="demo col col--9">col col--9</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--4">col col--4</div>
+				<div class="demo col col--8">col col--8</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--5">col col--5</div>
+				<div class="demo col col--7">col col--7</div>
+			</div>
+			<div class="row">
+				<div class="demo col col--6">col col--6</div>
+				<div class="demo col col--6">col col--6</div>
+			</div>
+		</div>
 		<script src="dist/zcss.js"></script>
 	</body>
 </html>
