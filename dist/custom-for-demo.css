@@ -1,6 +1,10 @@
-.demo.col{
-    border-radius: 3px;
-    background: #aaa;
-    padding: 5px;
-    margin: 5px 0px;
+* {
+	font-family: "Fira Code", monospace;
+}
+.demo.col {
+	border-radius: 3px;
+	background: #aaa;
+	padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
